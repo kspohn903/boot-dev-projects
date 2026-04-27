@@ -11,7 +11,7 @@ def main(screen_x = 800, screen_y = 600, margin = 50):
 
     def handle_generate():
         # Clear existing canvas if needed (Tkinter: canvas.delete("all"))
-        nonlocal win
+        nonlocal win, margin
         
         win.canvas.delete("all")
 
