@@ -52,12 +52,15 @@ class Maze:
         self._cells[i][j].draw(x1, y1, x2, y2)
         self._animate()
 
-    def _animate(self, sleep_interval=0.05):
+    def _animate(self, is_base_step = False, backtrack_factor = 8):
         if self._win is None:
             return
         self._win.redraw()
-        time.sleep(sleep_interval)
-
+        # Pull the speed directly from the UI slider
+        delay = float(self._win.speed_slider.get())
+        delay = delay if(is_base_step) else (delay * backtrack_factor)
+        time.sleep(delay)
+    
     # Conceptual snippet for your new method
     def _break_entrance_and_exit(self):
         self._cells[0][0].has_top_wall = False
@@ -131,7 +134,7 @@ class Maze:
         return self._solve_r(0, 0)
 
     def _solve_r(self, i, j):
-        self._animate(sleep_interval = 0.01)
+        self._animate(is_base_step = True)
         self._cells[i][j].visited = True
 
         # If we are at the goal, we are done!
@@ -155,7 +158,7 @@ class Maze:
               return True
            else:
               self._cells[i][j].draw_move(self._cells[next_i][j], undo=True)
-              self._animate(sleep_time=0.08)
+              self._animate(is_base_step=False)
 
         # Left
         if (i > 0 and 
@@ -168,7 +171,7 @@ class Maze:
               return True
            else:
               self._cells[i][j].draw_move(self._cells[next_i][j], undo=True)
-              self._animate(sleep_time=0.08)
+              self._animate(is_base_step=False)
 
         # Down
         if (j < self._num_rows - 1 and 
@@ -181,7 +184,7 @@ class Maze:
               return True
            else:
               self._cells[i][j].draw_move(self._cells[i][next_j], undo=True)
-              self._animate(sleep_time=0.08)
+              self._animate(is_base_step=False)
 
         # Up
         if (j > 0 and 
@@ -194,7 +197,7 @@ class Maze:
               return True
            else:
               self._cells[i][j].draw_move(self._cells[i][next_j], undo=True)
-              self._animate(sleep_time=0.08)
+              self._animate(is_base_step=False)
 
         # No path found from this cell
         return False

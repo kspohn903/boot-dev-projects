@@ -16,16 +16,17 @@ def main(screen_x = 800, screen_y = 600, margin = 50):
         win.canvas.delete("all")
 
         # Parse dynamic inputs
-        seed_getter = win.seed.get()
-        num_rows_getter = win.num_rows.get()
-        num_cols_getter = win.num_cols.get()
+        seed_getter = win.seed.get().strip()
+        num_rows_getter = win.num_rows.get().strip()
+        num_cols_getter = win.num_cols.get().strip()
         
-        seed_val = int(seed_getter) if raw_seed.isdigit() else None
+        seed_val = int(seed_getter) if seed_getter.isdigit() else None
         
         try:
             num_rows = int(num_rows_getter)
             num_cols = int(num_cols_getter)
         except ValueError as ve:
+            print("Invalid input: Rows and Columns must be integers between 1 and 50.")
             ve.print_exc()
             return 
 

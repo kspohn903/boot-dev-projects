@@ -1,9 +1,9 @@
-from tkinter import Tk, BOTH, Canvas, Frame, Label, Entry, Button, StringVar
-
+from tkinter import Tk, BOTH, Canvas, Frame, Label, Spinbox, Scale, HORIZONTAL, StringVar, Entry, Button
 class Window:
-    def __init__(self, width, height):
+    def __init__(self, width, height, on_generate):
         self.__root = Tk()
         self.__root.title("Maze Solver")
+        self.on_generate = on_generate # Store the callback
         
         # Control Panel Frame
         self.controls = Frame(self.__root, width=250, bg="#f0f0f0")
@@ -14,15 +14,27 @@ class Window:
 
         self.seed = StringVar(value="None")
         Label(self.controls, text="Seed:").pack()
-        Entry(self.controls, textvariable=self.seed_var).pack(pady=5)
-        
-        self.num_rows = StringVar(value="20")
+        Entry(self.controls, textvariable=self.seed).pack(pady=5)
+       
+        # Spinbox for Rows (1 to 50)
         Label(self.controls, text="Rows:").pack()
-        Entry(self.controls, textvariable=self.num_rows).pack(pady=5)
-        
-        self.num_cols = StringVar(value="30")
+        self.num_rows = Spinbox(self.controls, from_=1, to=50, width=5)
+        self.num_rows.delete(0, "end")
+        self.num_rows.insert(0, "20")
+        self.num_rows.pack(pady=5)
+
+        # Spinbox for Cols (1 to 50)
         Label(self.controls, text="Cols:").pack()
-        Entry(self.controls, textvariable=self.num_cols).pack(pady=5)
+        self.num_cols = Spinbox(self.controls, from_=1, to=50, width=5)
+        self.num_cols.delete(0, "end")
+        self.num_cols.insert(0, "30")
+        self.num_cols.pack(pady=5)
+
+        # Speed Slider (0.0s to 0.1s)
+        Label(self.controls, text="Animation Delay (sec):").pack(pady=(10, 0))
+        self.speed_slider = Scale(self.controls, from_=0.0, to=0.1, resolution=0.01, orient=HORIZONTAL)
+        self.speed_slider.set(0.05)
+        self.speed_slider.pack(pady=5)
 
         # Action Button
         Button(self.controls, text="Generate & Solve", command=on_generate).pack(pady=20)

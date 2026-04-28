@@ -1,9 +1,12 @@
-class Point:
+import itertools
+class Point: # IS POINT
+    __slots__ = ['x', 'y'] 
     def __init__(self, x, y):
         self.x = x
         self.y = y
 
-class Line:
+class Line: # HAS POINTS
+    __slots__ = ['p1','p2']
     def __init__(self, p1, p2):
         self.p1 = p1
         self.p2 = p2
@@ -16,8 +19,10 @@ class Line:
             width=2
         )
 
-class Cell:
-    def __init__(self, win=None):
+class Cell: # HAS POINTS AS SQUARE
+    __slots__ = ['has_left_wall', 'has_right_wall', 'has_top_wall', 'has_bottom_wall', 'visited', '_x1', '_x2', '_y1', '_y2', '_win']
+    
+    def __init__(self, win=None):    
         self.has_left_wall = True
         self.has_right_wall = True
         self.has_top_wall = True
