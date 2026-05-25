@@ -1,0 +1,1112 @@
+
+			color: #000;
+			font-family: Menlo, monospace;
+			background: #f0f0f0;
+			border-radius: 2px;
+			padding: 4px 8px;
+			font-size: 90%;
+		}
+
+		.warn {
+			color: #dd0000;
+		}
+
+		footer {
+			color: #777;
+			font-size: 16px;
+			text-align: center;
+			max-width: 600px;
+			margin: 0 auto 50px;
+		}
+
+		#disclaimer {
+			font-size: 14px;
+			margin-top: 20px;
+			display: inline-block;
+			border-top: 1px solid #ccc;
+			padding: 20px;
+		}
+
+		@media (max-width: 1100px) {
+			.stack {
+				width: 85%;
+			}
+		}
+
+		@media (max-width: 800px) {
+			.stack {
+				margin: 0 0 50px 0;
+				width: 100%;
+			}
+
+			.paper {
+				padding: 50px;
+			}
+
+			#paper1,
+			#paper2 {
+				display: none;
+			}
+
+			#paper3 {
+				left: 0;
+				transform: none;
+				top: 0;
+			}
+
+			#caddy {
+				max-width: 300px;
+				margin-bottom: 45px;
+				display: block;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="stack">
+		<div class="paper" id="paper1"></div>
+		<div class="paper" id="paper2"></div>
+		<div class="paper" id="paper3">
+			<a href="https://caddyserver.com/" title="Caddy Web Server">
+				<svg id="caddy" viewBox="0 0 379 114" version="1.1" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+					style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
+					<g transform="matrix(1,0,0,1,-35.5985,-67.948)">
+						<g transform="matrix(1.16548,0,0,1.10195,-124,-68.27)">
+							<g id="Light-Logo" serif:id="Light Logo"
+								transform="matrix(0.858013,0,0,0.907485,-3243.42,-1469.17)">
+								<g id="Logo" transform="matrix(1,0,0,1,21.4759,36.7359)">
+									<g id="Icon">
+										<g>
+										<g
+										transform="matrix(-0.191794,-0.715786,0.715786,-0.191794,4329.14,4673.64)">
+										<path
+										d="M3901.56,610.734C3893.53,610.261 3886.06,608.1 3879.2,604.877C3872.24,601.608 3866.04,597.093 3860.8,591.633C3858.71,589.457 3856.76,587.149 3854.97,584.709C3853.2,582.281 3851.57,579.733 3850.13,577.066C3845.89,569.224 3843.21,560.381 3842.89,550.868C3842.57,543.321 3843.64,536.055 3845.94,529.307C3848.37,522.203 3852.08,515.696 3856.83,510.049L3855.79,509.095C3850.39,514.54 3846.02,520.981 3842.9,528.125C3839.84,535.125 3838.03,542.781 3837.68,550.868C3837.34,561.391 3839.51,571.425 3843.79,580.306C3845.27,583.38 3847.03,586.304 3849.01,589.049C3851.01,591.806 3853.24,594.39 3855.69,596.742C3861.75,602.568 3869,607.19 3877.03,610.1C3884.66,612.867 3892.96,614.059 3901.56,613.552L3901.56,610.734Z"
+										style="fill:rgb(31,136,192);" />
+										</g>
+										<g
+										transform="matrix(-0.191794,-0.715786,0.715786,-0.191794,4329.14,4673.64)">
+										<path
+										d="M3875.69,496.573C3879.62,494.538 3883.8,492.897 3888.2,491.786C3892.49,490.704 3896.96,490.124 3901.56,490.032C3903.82,490.13 3906.03,490.332 3908.21,490.688C3917.13,492.147 3925.19,495.814 3932.31,500.683C3936.13,503.294 3939.59,506.335 3942.81,509.619C3947.09,513.98 3950.89,518.816 3953.85,524.232C3958.2,532.197 3960.96,541.186 3961.32,550.868C3961.61,558.748 3960.46,566.345 3957.88,573.322C3956.09,578.169 3953.7,582.753 3950.66,586.838C3947.22,591.461 3942.96,595.427 3938.27,598.769C3933.66,602.055 3928.53,604.619 3923.09,606.478C3922.37,606.721 3921.6,606.805 3920.93,607.167C3920.42,607.448 3920.14,607.854 3919.69,608.224L3920.37,610.389C3920.98,610.432 3921.47,610.573 3922.07,610.474C3922.86,610.344 3923.55,609.883 3924.28,609.566C3931.99,606.216 3938.82,601.355 3944.57,595.428C3947.02,592.903 3949.25,590.174 3951.31,587.319C3953.59,584.168 3955.66,580.853 3957.43,577.348C3961.47,569.34 3964.01,560.422 3964.36,550.868C3964.74,540.511 3962.66,530.628 3958.48,521.868C3955.57,515.775 3951.72,510.163 3946.95,505.478C3943.37,501.962 3939.26,498.99 3934.84,496.562C3926.88,492.192 3917.87,489.76 3908.37,489.229C3906.12,489.104 3903.86,489.054 3901.56,489.154C3896.87,489.06 3892.3,489.519 3887.89,490.397C3883.3,491.309 3878.89,492.683 3874.71,494.525L3875.69,496.573Z"
+										style="fill:rgb(31,136,192);" />
+										</g>
+										</g>
+										<g>
+										<g transform="matrix(-3.37109,-0.514565,0.514565,-3.37109,4078.07,1806.88)">
+										<path
+										d="M22,12C22,10.903 21.097,10 20,10C19.421,10 18.897,10.251 18.53,10.649C18.202,11.006 18,11.481 18,12C18,13.097 18.903,14 20,14C21.097,14 22,13.097 22,12Z"
+										style="fill:none;fill-rule:nonzero;stroke:rgb(31,136,192);stroke-width:1.05px;" />
+										</g>
+										<g transform="matrix(-5.33921,-5.26159,-3.12106,-6.96393,4073.87,1861.55)">
+										<path
+										d="M10.315,5.333C10.315,5.333 9.748,5.921 9.03,6.673C7.768,7.995 6.054,9.805 6.054,9.805L6.237,9.86C6.237,9.86 8.045,8.077 9.36,6.771C10.107,6.028 10.689,5.444 10.689,5.444L10.315,5.333Z"
+										style="fill:rgb(31,136,192);" />
+										</g>
+										</g>
+										<g id="Padlock" transform="matrix(3.11426,0,0,3.11426,3938.31,1737.25)">
+										<g>
+										<path
+										d="M9.876,21L18.162,21C18.625,21 19,20.625 19,20.162L19,11.838C19,11.375 18.625,11 18.162,11L5.838,11C5.375,11 5,11.375 5,11.838L5,16.758"
+										style="fill:none;stroke:rgb(34,182,56);stroke-width:1.89px;stroke-linecap:butt;stroke-linejoin:miter;" />
+										<path d="M8,11L8,7C8,4.806 9.806,3 12,3C14.194,3 16,4.806 16,7L16,11"
+										style="fill:none;fill-rule:nonzero;stroke:rgb(34,182,56);stroke-width:1.89px;" />
+										</g>
+										</g>
+										<g>
+										<g transform="matrix(5.30977,0.697415,-0.697415,5.30977,3852.72,1727.97)">
+										<path
+										d="M22,12C22,11.659 21.913,11.337 21.76,11.055C21.421,10.429 20.756,10 20,10C18.903,10 18,10.903 18,12C18,13.097 18.903,14 20,14C21.097,14 22,13.097 22,12Z"
+										style="fill:none;fill-rule:nonzero;stroke:rgb(31,136,192);stroke-width:0.98px;" />
+										</g>
+										<g transform="matrix(4.93114,2.49604,1.11018,5.44847,3921.41,1726.72)">
+										<path
+										d="M8.902,6.77C8.902,6.77 7.235,8.253 6.027,9.366C5.343,9.996 4.819,10.502 4.819,10.502L5.52,11.164C5.52,11.164 6.021,10.637 6.646,9.951C7.749,8.739 9.219,7.068 9.219,7.068L8.902,6.77Z"
+										style="fill:rgb(31,136,192);" />
+										</g>
+										</g>
+									</g>
+									<g id="Wordmark" transform="matrix(1.54159,0,0,2.8744,2710.6,709.804)">
+										<g id="y" transform="matrix(0.50291,0,0,0.281607,905.533,304.987)">
+										<path
+										d="M192.152,286.875L202.629,268.64C187.804,270.106 183.397,265.779 180.143,263.391C176.888,261.004 174.362,257.99 172.563,254.347C170.765,250.705 169.866,246.691 169.866,242.305L169.866,208.107L183.21,208.107L183.21,242.213C183.21,245.188 183.896,247.822 185.268,250.116C186.64,252.41 188.465,254.197 190.743,255.475C193.022,256.754 195.501,257.393 198.182,257.393C200.894,257.393 203.393,256.75 205.68,255.463C207.966,254.177 209.799,252.391 211.178,250.105C212.558,247.818 213.248,245.188 213.248,242.213L213.248,208.107L226.545,208.107L226.545,242.305C226.545,246.707 225.378,258.46 218.079,268.64C215.735,271.909 207.835,286.875 207.835,286.875L192.152,286.875Z"
+										style="fill:rgb(47,47,47);fill-rule:nonzero;" />
+										</g>
+										<g id="add" transform="matrix(0.525075,0,0,0.281607,801.871,304.987)">
+										<g transform="matrix(116.242,0,0,116.242,161.846,267.39)">
+										<path
+										d="M0.276,0.012C0.227,0.012 0.186,0 0.15,-0.024C0.115,-0.048 0.088,-0.08 0.069,-0.12C0.05,-0.161 0.04,-0.205 0.04,-0.254C0.04,-0.305 0.051,-0.35 0.072,-0.39C0.094,-0.431 0.125,-0.463 0.165,-0.487C0.205,-0.51 0.254,-0.522 0.31,-0.522C0.366,-0.522 0.413,-0.51 0.452,-0.486C0.491,-0.463 0.521,-0.431 0.542,-0.39C0.562,-0.35 0.573,-0.305 0.573,-0.256L0.573,-0L0.458,-0L0.458,-0.095L0.456,-0.095C0.446,-0.076 0.433,-0.058 0.417,-0.042C0.401,-0.026 0.381,-0.013 0.358,-0.003C0.335,0.007 0.307,0.012 0.276,0.012ZM0.307,-0.086C0.337,-0.086 0.363,-0.093 0.386,-0.108C0.408,-0.123 0.426,-0.144 0.438,-0.17C0.45,-0.195 0.456,-0.224 0.456,-0.256C0.456,-0.288 0.45,-0.317 0.438,-0.342C0.426,-0.367 0.409,-0.387 0.387,-0.402C0.365,-0.417 0.338,-0.424 0.308,-0.424C0.276,-0.424 0.249,-0.417 0.226,-0.402C0.204,-0.387 0.186,-0.366 0.174,-0.341C0.162,-0.315 0.156,-0.287 0.156,-0.255C0.156,-0.224 0.162,-0.195 0.174,-0.169C0.186,-0.144 0.203,-0.123 0.226,-0.108C0.248,-0.093 0.275,-0.086 0.307,-0.086Z"
+										style="fill:rgb(47,47,47);fill-rule:nonzero;" />
+										</g>
+										<g transform="matrix(116.242,0,0,116.242,226.592,267.39)">
+										<path
+										d="M0.306,0.012C0.265,0.012 0.229,0.006 0.196,-0.008C0.163,-0.021 0.135,-0.039 0.112,-0.064C0.089,-0.088 0.071,-0.117 0.059,-0.151C0.046,-0.185 0.04,-0.222 0.04,-0.263C0.04,-0.315 0.051,-0.36 0.072,-0.399C0.093,-0.437 0.122,-0.468 0.159,-0.489C0.196,-0.511 0.239,-0.522 0.287,-0.522C0.311,-0.522 0.333,-0.518 0.355,-0.511C0.377,-0.504 0.396,-0.493 0.413,-0.48C0.431,-0.466 0.445,-0.451 0.455,-0.433L0.456,-0.433L0.456,-0.73L0.571,-0.73L0.571,-0.261C0.571,-0.205 0.56,-0.156 0.537,-0.115C0.515,-0.074 0.484,-0.043 0.444,-0.021C0.405,0.001 0.358,0.012 0.306,0.012ZM0.306,-0.086C0.335,-0.086 0.361,-0.093 0.384,-0.107C0.406,-0.122 0.423,-0.141 0.436,-0.167C0.448,-0.192 0.455,-0.221 0.455,-0.255C0.455,-0.288 0.448,-0.317 0.436,-0.343C0.423,-0.368 0.406,-0.388 0.383,-0.402C0.361,-0.417 0.335,-0.424 0.305,-0.424C0.276,-0.424 0.251,-0.417 0.228,-0.402C0.206,-0.387 0.188,-0.368 0.175,-0.342C0.163,-0.317 0.156,-0.288 0.156,-0.255C0.156,-0.222 0.163,-0.193 0.175,-0.167C0.188,-0.142 0.206,-0.122 0.229,-0.108C0.251,-0.093 0.277,-0.086 0.306,-0.086Z"
+										style="fill:rgb(47,47,47);fill-rule:nonzero;" />
+										</g>
+										<g transform="matrix(116.242,0,0,116.242,290.293,267.39)">
+										<path
+										d="M0.306,0.012C0.265,0.012 0.229,0.006 0.196,-0.008C0.163,-0.021 0.135,-0.039 0.112,-0.064C0.089,-0.088 0.071,-0.117 0.059,-0.151C0.046,-0.185 0.04,-0.222 0.04,-0.263C0.04,-0.315 0.051,-0.36 0.072,-0.399C0.093,-0.437 0.122,-0.468 0.159,-0.489C0.196,-0.511 0.239,-0.522 0.287,-0.522C0.311,-0.522 0.333,-0.518 0.355,-0.511C0.377,-0.504 0.396,-0.493 0.413,-0.48C0.431,-0.466 0.445,-0.451 0.455,-0.433L0.456,-0.433L0.456,-0.73L0.571,-0.73L0.571,-0.261C0.571,-0.205 0.56,-0.156 0.537,-0.115C0.515,-0.074 0.484,-0.043 0.444,-0.021C0.405,0.001 0.358,0.012 0.306,0.012ZM0.306,-0.086C0.335,-0.086 0.361,-0.093 0.384,-0.107C0.406,-0.122 0.423,-0.141 0.436,-0.167C0.448,-0.192 0.455,-0.221 0.455,-0.255C0.455,-0.288 0.448,-0.317 0.436,-0.343C0.423,-0.368 0.406,-0.388 0.383,-0.402C0.361,-0.417 0.335,-0.424 0.305,-0.424C0.276,-0.424 0.251,-0.417 0.228,-0.402C0.206,-0.387 0.188,-0.368 0.175,-0.342C0.163,-0.317 0.156,-0.288 0.156,-0.255C0.156,-0.222 0.163,-0.193 0.175,-0.167C0.188,-0.142 0.206,-0.122 0.229,-0.108C0.251,-0.093 0.277,-0.086 0.306,-0.086Z"
+										style="fill:rgb(47,47,47);fill-rule:nonzero;" />
+										</g>
+										</g>
+										<g id="c"
+										transform="matrix(-0.0716462,0.31304,-0.583685,-0.0384251,1489.76,-444.051)">
+										<path
+										d="M2668.11,700.4C2666.79,703.699 2666.12,707.216 2666.12,710.766C2666.12,726.268 2678.71,738.854 2694.21,738.854C2709.71,738.854 2722.3,726.268 2722.3,710.766C2722.3,704.111 2719.93,697.672 2715.63,692.597L2707.63,699.378C2710.33,702.559 2711.57,706.602 2711.81,710.766C2712.2,717.38 2706.61,724.52 2697.27,726.637C2683.9,728.581 2676.61,720.482 2676.61,710.766C2676.61,708.541 2677.03,706.336 2677.85,704.269L2668.11,700.4Z"
+										style="fill:rgb(46,46,46);" />
+										</g>
+									</g>
+								</g>
+								<g id="R" transform="matrix(0.497016,0,0,0.497016,2390.38,823.152)">
+									<g transform="matrix(1,0,0,1,-0.10786,0.450801)">
+										<g transform="matrix(12.1247,0,0,12.1247,3862.61,1929.9)">
+										<path
+										d="M0.073,-0L0.073,-0.7L0.383,-0.7C0.428,-0.7 0.469,-0.69 0.506,-0.67C0.543,-0.651 0.572,-0.623 0.594,-0.588C0.616,-0.553 0.627,-0.512 0.627,-0.465C0.627,-0.418 0.615,-0.377 0.592,-0.342C0.569,-0.306 0.539,-0.279 0.501,-0.259L0.57,-0.128C0.574,-0.12 0.579,-0.115 0.584,-0.111C0.59,-0.107 0.596,-0.106 0.605,-0.106L0.664,-0.106L0.664,-0L0.587,-0C0.56,-0 0.535,-0.007 0.514,-0.02C0.493,-0.034 0.476,-0.052 0.463,-0.075L0.381,-0.232C0.375,-0.231 0.368,-0.231 0.361,-0.231C0.354,-0.231 0.347,-0.231 0.34,-0.231L0.192,-0.231L0.192,-0L0.073,-0ZM0.192,-0.336L0.368,-0.336C0.394,-0.336 0.417,-0.341 0.438,-0.351C0.459,-0.361 0.476,-0.376 0.489,-0.396C0.501,-0.415 0.507,-0.438 0.507,-0.465C0.507,-0.492 0.501,-0.516 0.488,-0.535C0.475,-0.554 0.459,-0.569 0.438,-0.579C0.417,-0.59 0.394,-0.595 0.369,-0.595L0.192,-0.595L0.192,-0.336Z"
+										style="fill:rgb(46,46,46);fill-rule:nonzero;" />
+										</g>
+									</g>
+									<g transform="matrix(1,0,0,1,0.278569,0.101881)">
+										<circle cx="3866.43" cy="1926.14" r="8.923"
+										style="fill:none;stroke:rgb(46,46,46);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+				</svg>
+			</a>
+
+			<h1>
+				<!-- English --> <span class="lang">Congratulations!</span>
+				<!-- Japanese --> <span class="lang">おめでとう!</span>
+				<!-- Spanish --> <span class="lang">¡Felicidades!</span>
+				<!-- Chinese --> <span class="lang">恭喜!</span>
+				<!-- Hindi --> <span class="lang">बधाई हो!</span>
+				<!-- Russian --> <span class="lang">Поздравляю!</span>
+				<!-- Ukrainian --> <span class="lang">Вітаю!</span>
+				<!-- Dutch --> <span class="lang">Gefeliciteerd!</span>
+				<!-- German --> <span class="lang">Glückwunsch!</span>
+				<span class="emoji">🎊</span>
+			</h1>
+
+			<p>
+				Your web server is working. Now make it work for you. 💪
+			</p>
+			<p>
+				Caddy is ready to serve your site over HTTPS:
+			</p>
+			<ol>
+				<li>Point your domain's A/AAAA DNS records at this machine.</li>
+				<li>Upload your site's files to <code>/var/www/html</code>.
+				<li>
+					Edit your Caddyfile at <code>/etc/caddy/Caddyfile</code>:
+					<ol>
+						<li>Replace <code>:80</code> with your domain name</li>
+						<li>Change the site root to <code>/var/www/html</code></li>
+					</ol>
+				</li>
+				<li>Reload the configuration: <code>systemctl reload caddy</code></li>
+				<li>Visit your site!</li>
+			</ol>
+			<h2>If that worked 🥳</h2>
+			<p>
+				Awesome! You won't have to look at this slanted page anymore.
+			</p>
+			<p>
+				Remember, Caddy can do a lot more than serve static files. It's also a powerful reverse proxy and
+				application platform. You can use the Caddyfile to enable any other features you need. Or you could use
+				Caddy's API to configure it programmatically.
+			</p>
+			<p>
+				Everything you need to know is either in the <a href="https://caddyserver.com/docs/">📖 Caddy
+					documentation</a> or the manual for your OS/platform. Have fun!
+			</p>
+
+			<h2>If that didn't work 😶</h2>
+			<p>
+				It's okay, you can fix it! First check the following things:
+			</p>
+			<ul>
+				<li>Service status: <code>systemctl status caddy</code></li>
+				<li>Logs: <code>journalctl --no-pager -u caddy</code></li>
+				<li>Are your site's files readable by the caddy user and group? <code>ls -la /var/www/html</code></li>
+				<li>Is the caddy home directory writeable? <code>ls -la /var/lib/caddy</code></li>
+				<li>Ensure your domain's A and/or AAAA records point to your machine's public IP address:
+					<code>dig example.com</code></li>
+				<li>Are your ports 80 and 443 externally reachable, and is Caddy able to bind to them? Check your
+					firewalls, port forwarding, and other network configuration.</li>
+			</ul>
+			<p>
+				<b class="warn">WAIT!</b> Before trying again, switch to <a
+					href="https://letsencrypt.org/docs/staging-environment/">Let's Encrypt's staging environment</a> to
+				avoid being accidentally <a href="https://letsencrypt.org/docs/rate-limits/">rate limited</a>. Once you
+				get everything else working, it's safe to switch back.
+			</p>
+			<p>
+				Depending on your DNS provider, it may take a while for the DNS records to propagate. Even when
+				everything is configured properly, automated challenges to obtain TLS certificates usually take several
+				seconds, but may take up to several minutes or hours.
+			<p>
+				If you still need help, we have a <a href="https://caddy.community/">great community</a>! First <a
+					href="https://caddy.community/search">try a search</a>, and if your question is original, go ahead
+				and ask it! Remember to pay it forward and help others too. 😁
+			</p>
+			<p>
+				Visit Caddy on:
+				<b><a href="https://github.com/caddyserver/caddy" title="Caddy on GitHub">GitHub</a></b>
+				or
+				<b><a href="https://twitter.com/caddyserver" title="@caddyserver on Twitter">Twitter</a></b>
+				or
+				<b><a href="https://caddy.community/" title="Caddy forums">Our Forum</a></b>
+			</p>
+		</div>
+	</div>
+
+	<footer>
+		&copy; Copyright The Caddy Authors
+
+		<div id="disclaimer">
+			The Caddy project is not responsible for the content, disposition, or behavior of this Web
+			property, which is independently owned and maintained. For inquiries, please contact the site owner or
+			hosting provider.
+		</div>
+	</footer>
+
+</body>
+
+</html>
+/ # 
+MCC_Cisco_Cert_F21_F22/
+MDHearingAidFreeReportCost2018.pdf
+media_EDU_Content_file_tree.txt
+metabase.db.mv.db
+metabase.db.trace.db
+metabase.jar
+Metric Algebraic Geometry.pdf
+microservices-antipatterns-and-pitfalls.pdf
+microservices-for-java-developers.pdf
+microservices-in-production.pdf
+microservices-vs-service-oriented-architecture.pdf
+Microsoft Azure Security Technologies (az-500) - A Certification Guide (Jayant Sharma) (Z-Library).pdf
+migrating-big-data-analytics.pdf
+migrating-cloud-native-application-architectures.pdf
+migrating-java-to-the-cloud.pdf
+migrating-to-microservice-databases.pdf
+Miniforge3-Linux-x86_64.sh
+.minikube/
+minikube_latest_amd64.deb
+minikube-linux-amd64
+Misner_Thorne_Wheeler_Gravitation_Freema.pdf
+MITPress.Introduction.to.Algorithms.3rd.2009.pdf
+mobile-app-analytics.pdf
+Modern Chemistry_ Student Edition 2012 ( PDFDrive ).pdf
+modern-java-ee-design-patterns.pdf
+modern-javascript.pdf
+modern-svg.pdf
+modern-web-operations.pdf
+monitoring-distributed-systems.pdf
+mtg_counter_research_dataframe_skeleton.ods
+Mtg_Decklists/
+mtg_keyword_scryfall_queryset.py
+mtg_keywords.txt
+Mtg_Turing_Complete.pdf
+murachs-mainframe-cobol_compress.pdf
+Music/
+My_Life_is_Ideal_When.txt
+name.basics.tsv
+NavigatingLinuxViaTheTerminal.pdf
+.net/
+NetAcad Learning Transcript.pdf
+Netflix-High-Level-System-Architecture.png
+network-automation-with-ansible.pdf
+Network_Pentest_Course_1736456026.pdf
+Neumaier_Westra_Classical_Quantum_Physics_Lie_Algebra.pdf
+New Horizons CCNA Course/
+.nix-profile
+node_modules/
+not-all-data-is-created-equal.pdf
+.npm/
+nth_prime.py
+Nuclear and Particle Physics (Walet).pdf
+Nuclear Physics/
+nullmetalalchemist_archive.torrent
+Numerical_Analysis.pdf
+Numerical_Method_by_J_Dougles_Faires_Ric.pdf
+Numerical Methods - Hornbeck.pdf
+Numerical Methods That Usually Work (1990) - Acton.pdf
+.nvm/
+object-oriented-vs-functional-programming.pdf
+Octave_MatLab_Numerical_Analysis_Techniques.html
+open-by-design.pdf
+open-source-in-brazil.pdf
+Open Stack Made Easy WP v9.pdf
+Open_Veins_of_Latin_America.pdf
+Optical Physics (Ariel Lipson, Stephen G. Lipson, Henry Lipson) (Z-Library).pdf
+Optics_Intro_Masters_End_Bachelors (Konijnenberg, Adam, and Urbach).pdf
+optimizing-cloud-migration.pdf
+[O`Reilly] - JavaScript. The Definitive Guide, 6th ed. - [Flanagan].pdf
+.p2/
+package.json
+package-lock.json
+Packages
+.password-store/
+Path-to-Predictive-Analytics-and-Machine-Learning_eBook.pdf
+patrolling-the-dark-net.pdf
+PDF/
+Periodic Table of Elements - PubChem.html
+personal_projects/
+Peter Gulutzan, Trudy Pelzer - SQL Performance Tuning (2002, Addison-Wesley Professional).pdf
+PGP_Signature_Git_Blocks/
+Physical_and_Theoretical_Chemistry_Textbook.pdf
+Physical_Chemistry_(LibreTexts).pdf
+Physicists Just Released Step-by-Step Instructions for Building a Wormhole _ Live Science.pdf
+Physics/
+Physics_Webpages/
+Pictures/
+pitching-your-iot-project.pdf
+.pki/
+plugins/
+podman-action.pdf
+Pokemon.csv
+Pokemon.ods
+Pokemon.xlsx
+postgresql-16.7.27.tgz
+PowerBall_ExtractionAPI.ipynb
+practical-artificial-intelligence-in-the-cloud.pdf
+practical-c-plus-plus-metaprogramming.pdf
+Practical_Time_Series_Analysis_MemSQL.pdf
+predictive-maintenance.pdf
+Principles_of_solid_state_electron_optic.pdf
+privacy-and-the-iot.pdf
+Pro Django, 2nd Edition (Marty Alchin) (Z-Library).pdf
+Producer_Consumer_Model_Saylor_CS_Programming_Java_101.txt
+Professional Visual Studio 2017.pdf
+.profile
+Programming/
+Proof_of_the_CLT.pdf
+Psychology/
+Public/
+pugh-skiplists-cacm1990.pdf
+pydata-book/
+python-and-aws-cookbook_compress.pdf
+Python and HDF5 (Andrew Collette) (Z-Library).pdf
+Python for Cybersecurity (Howard E. Poston) (Z-Library).pdf
+python-in-education.pdf
+python_lottery_ETL_ML_Reshape/
+python-network-engineering-english-version.pdf
+python-web-frameworks.pdf
+Quantum_Chemistry_with_Applications_in_Spectroscopy_(Fleming).pdf
+Quantum Chromodynamics (Walter Greiner, Stefan Schramm, Eckart Stein etc.) (Z-Library).pdf
+Quantum Mechanics/
+Quantum Mechanics (Fowler).pdf
+Quantum Mechanics III (Chong).pdf
+Raspberry Pi/
+RcmdsFromClass.pdf
+r-cookbook-proven-recipes-for-data-analysis-statistics-and-graphics_compress.pdf
+Rd_edition_linear_algebra_and_its_applic.pdf
+reactive-microservices-architecture-orm.pdf
+React_Roadmap_1746137081.pdf
+Real Analysis/
+real-user-measurements.pdf
+real-world-maintainable-software.pdf
+Reasons_I_Cannot_Trust_X_People.txt
+RedBlack.pdf
+Redshift_blueshift.svg.png
+Relativistic Quantum Mechanics. Wave Equations (Walter Greiner) (Z-Library).pdf
+release-engineering.pdf
+Reliability and Availability of Cloud Computing [2012].pdf
+Renew-You-Alpilean.pdf
+Report U.S. Nuclear System Relies On Outdated Technology Such As Floppy Disks  The Two-Way  NPR.pdf
+Research_Technician_UNO.txt
+Resumes/
+revolutn.pdf
+Riemann Surfaces (Simon Donaldson) (Z-Library).pdf
+rna-codon-sequence-chart-3605330299.jpg
+Robotics/
+rxjava-for-android-app-development.pdf
+SandHills_Cover_Letter.odt
+santosh-kumar-distributed-systems-algorithmic-approach-information-812.pdf
+saylor_academy_cs_courses/
+Saylor_Academy_Luxary_Car_Prototype_Model_Assessment_6_09_25_2025.txt
+Saylor_Academy_MBA_Course_Catelogue_2024.pdf
+Saylor_Data_Structures_Assessment_10.txt
+Saylor_DB_Design.txt
+Scalable Data Management for Future Hardware.pdf
+Science/
+.Scilab/
+scilab-2025.1.0/
+scistarter-api-key.txt
+SciStarter_Bulk-Upload/
+scrape_keywords.py
+Screenshot at 2025-09-30 14-32-41.png
+Screenshot at 2025-10-28 15-57-07.png
+scryfall_counter_counts.csv
+Sears_Zemansky_Physiscs_13th_edition.pdf
+SEARS  ZEMANSKYS - University Physics with Modern Physics (14th ed. 2014) + Masteringphysics with Etext -- Access Card... (Hugh D. Young, Roger A. Freedman) (Z-Library).pdf
+security-and-frontend-performance.pdf
+security-data-lake.pdf
+.selected_editor
+self-service-analytics.pdf
+Sensor_Technologies.pdf
+serverless-ops.pdf
+serving-workers-gig-economy.pdf
+Session02.ppt
+Session05.ppt
+simple_machine_learning_projects/
+smart-cities-smarter-citizens.pdf
+smart-energy.pdf
+snap/
+software-above-device.pdf
+software-architecture-patterns.pdf
+software-hardware-collide.pdf
+Solutions of Exercises of Introduction to Differential Geometry of Space Curves and Surfaces (Taha Sochi) (Z-Library).epub
+Solving_Wave_Equation_Fourier_Method.pdf
+Spacetime Physics (Taylor and Wheeler).pdf
+Special Relativity (Crowell).pdf
+Spherical_Harmonics_Subsection.pdf
+Spohn_Kevin_1087761_7_27_2025.pdf
+SQL_1744726927.pdf
+.ssh/
+startup-essentials.pdf
+state_automata_1_final.png
+static-site-generators.pdf
+Statistical Mechanics (Styer).pdf
+Statistical Physics ( PDFDrive ).pdf
+step_by_step_linux_guide.pdf
+Structure_and_Reactivity_in_Organic_Biological_and_Inorganic_Chemistry_2_Practical_Aspects_of_Structure_Purification_and_Spectroscopy.pdf
+Structure_and_Reactivity_in_Organic_Biological_and_Inorganic_Chemistry_3_Reactivity_in_Organic_Biological_and_Inorganic_Chemistry_1.pdf
+Structure_and_Reactivity_in_Organic_Biological_and_Inorganic_Chemistry_4_Reactivity_in_Organic_Biological_and_Inorganic_Chemistry_2.pdf
+Structure_and_Reactivity_in_Organic_Biological_and_Inorganic_Chemistry_(Schaller)_1_Chemical_Structure_and_Properties.pdf
+.sudo_as_admin_successful
+Survey of the Video Game Reissue Market in the United States.pdf
+Swift_IoT_Application_Development_Network_Topology_Controlled_Operability.html
+swift-pocket-reference.pdf
+.swt/
+System Volume Information/
+Tax_Returns/
+Techniques_in_Fractal_Geometry.pdf
+Templates/
+Tensors for Physics ( PDFDrive ).pdf
+Tensors The Mathematics of Relativity Theory and Continuum Mechanics (Anadi Jiban Das) (Z-Library).pdf
+ten-steps-to-linux-survival.pdf
+The+48+Laws+Of+Power.pdf
+The-Art-of-Computer-Programming-Books-master/
+The_Basics_of_GOB_Chemistry_(Ball et al)_LibreTexts.pdf
+the-big-data-market.pdf
+The Calculus of Functions of Several Variables (Sloughter).pdf
+The Calculus of Variations (2004) - van Brunt.pdf
+The Cargo Book.pdf
+The Conway knot is not slice.pdf
+The Essential Physics of Medical Imaging ( etc.) (Z-Library).epub
+The Functional Analysis of Quantum Information Theory.pdf
+The Gateway Process, Project Aquarius/
+the-human-side-of-postmortems.pdf
+The Monotile that Broke Graph Theory and Differential Geometry/
+the-new-artificial-intelligence-market.pdf
+the-new-manager-mindset.pdf
+The Physics of Waves (Goergi).pdf
+Thermodynamics and Statistical Mechanics (Nair).pdf
+Thermodynamics, Kinetic Theory, and Statistical Thermodynamics (Francis W. Sears, Gerhard L. Salinger) (Z-Library).pdf
+The Rust Programming Language.pdf
+the-secrets-behind-great-one-on-one-meetings.pdf
+The Topology of Fibre Bundles Volume 14 in Princeton Landmarks in Mathematics and Physics - Princeton University Press (Norman Steenrod) (Z-Library).pdf
+The-X-Handbook/
+THM/
+Thomas_Calculus.pdf
+three-critical-shifts-in-thinking-for-the-evolving-leader.pdf
+Todd Lammles CCNA IOS Commands survival guide (Lammle, Todd) (Z-Library).pdf
+todo_list_11_10_2025.txt
+topology  2Ed - James Munkres.pdf
+Top Windows Command Line Cheat Sheet (2024).html
+tos-programming-web.pdf
+trends-shaping-the-london-tech-scene.pdf
+Trig_Cheat_Sheet.pdf
+TryHackMe/
+tumblr_mtg_layers_chart.png
+Undergrad_Physics_Images_iCloud_Kevin_Spohn/
+unikernels.pdf
+University Calculus (Joel R. Hass, Maurice D. Weir, George B. Thomas etc.) (Z-Library).pdf
+University_Physics_with_Modern_Physics_1.pdf
+unsung-tools-of-devops.pdf
+update_settings.py
+upgrading-to-php-seven.pdf
+url_course_selector_mit_courses.txt
+user-experience-for-iot.pdf
+using-blocks-in-ruby.pdf
+Using_JSON_Schema.html
+vdoc.pub_data-science-on-the-google-cloud-platform.epub
+vdoc.pub_distributed-systems-for-fun-and-profit.epub
+.venv/
+Videos/
+Vim Cheat Sheet_files/
+Vim Cheat Sheet.html
+.vscode/
+wai-ning-mei-double-potential-energy-well.pdf
+webflyx/
+webpage-size-speed-perf.pdf
+web-performance-warrior.pdf
+.wget-hsts
+what-are-conversational-bots.pdf
+what-is-artificial-intelligence.pdf
+what-is-the-internet-of-things.pdf
+whats-new-in-swift-3.pdf
+whats-the-future-of-work.pdf
+when-hardware-meets-software.pdf
+WhoAmI_.pdf
+who-are-the-bad-guys-and-what-do-they-want.pdf
+why-reactive.pdf
+why-rust.pdf
+William Blum - Rogue State [2002].pdf
+.Xauthority
+.xsession-errors
+.xsession-errors.old
+Yanovsky_Partial_Diiferential_Equations_2005.pdf
+Young & Freedman - University Physics 13.pdf
+Your Rights Are An ILLUSION - George Carlin.mp4
+kspohn@kspohn-HP-Laptop:~$ ls ./Dockerfile 
+./Dockerfile
+kspohn@kspohn-HP-Laptop:~$ rm ./Dockerfile 
+kspohn@kspohn-HP-Laptop:~$ mkdir ./goserver
+kspohn@kspohn-HP-Laptop:~$ cd ./goserver/
+kspohn@kspohn-HP-Laptop:~/goserver$ vim main.go
+kspohn@kspohn-HP-Laptop:~/goserver$ go mod init github.com/kspohn903/
+boot-dev-docker-go-server 
+go: malformed module path "github.com/kspohn903/": trailing slash
+boot-dev-docker-go-server: command not found
+kspohn@kspohn-HP-Laptop:~/goserver$ go mod init github.com/kspohn903/boot-dev-docker-go-server
+go: creating new go.mod: module github.com/kspohn903/boot-dev-docker-go-server
+go: to add module requirements and sums:
+	go mod tidy
+kspohn@kspohn-HP-Laptop:~/goserver$ go mod init github.com/kspohn903/boot-dev-docker-go-server
+go: /home/kspohn/goserver/go.mod already exists
+kspohn@kspohn-HP-Laptop:~/goserver$ go build
+kspohn@kspohn-HP-Laptop:~/goserver$ ./goserver
+bash: ./goserver: No such file or directory
+kspohn@kspohn-HP-Laptop:~/goserver$ ls- al
+Command 'ls-' not found, did you mean:
+  command 'lsd' from snap lsd (0.16.0)
+  command 'lsd' from deb lsd (0.23.1-8)
+  command 'lsh' from deb lsh-client (2.1-14)
+  command 'lsc' from deb livescript (1.6.1+dfsg-3)
+  command 'lsw' from deb suckless-tools (47-1)
+  command 'ls' from deb coreutils (9.4-3ubuntu6.1)
+  command 'lsm' from deb lsm (1.0.4-2)
+See 'snap info <snapname>' for additional versions.
+kspohn@kspohn-HP-Laptop:~/goserver$ ls -al
+total 8012
+drwxrwxr-x    2 kspohn kspohn    4096 Nov 10 13:58 .
+drwxr-x--x+ 149 kspohn kspohn   57344 Nov 10 13:52 ..
+-rwxrwxr-x    1 kspohn kspohn 8128590 Nov 10 13:58 boot-dev-docker-go-server
+-rw-rw-r--    1 kspohn kspohn      65 Nov 10 13:58 go.mod
+-rw-rw-r--    1 kspohn kspohn     710 Nov 10 13:54 main.go
+kspohn@kspohn-HP-Laptop:~/goserver$ ./go.mod
+bash: ./go.mod: Permission denied
+kspohn@kspohn-HP-Laptop:~/goserver$ chmod +x ./go.mod
+kspohn@kspohn-HP-Laptop:~/goserver$ ./go.mod
+./go.mod: line 1: module: command not found
+go 1.25.3: unknown command
+Run 'go help' for usage.
+kspohn@kspohn-HP-Laptop:~/goserver$ go mod init github.com/kspohn903/boot-dev-docker-go-server/
+go: /home/kspohn/goserver/go.mod already exists
+kspohn@kspohn-HP-Laptop:~/goserver$ go build goserver
+package goserver is not in std (/home/kspohn/.local/opt/go-v1.25.3/src/goserver)
+kspohn@kspohn-HP-Laptop:~/goserver$ ls -al ./boot-dev-docker-go-server 
+-rwxrwxr-x 1 kspohn kspohn 8128590 Nov 10 13:58 ./boot-dev-docker-go-server
+kspohn@kspohn-HP-Laptop:~/goserver$ ls -al ./boot-dev-docker-go-server/ 
+ls: cannot access './boot-dev-docker-go-server/': Not a directory
+kspohn@kspohn-HP-Laptop:~/goserver$ ./boot-dev-docker-go-server 
+server started on  8010
+^C
+kspohn@kspohn-HP-Laptop:~/goserver$ vim Dockerfile
+kspohn@kspohn-HP-Laptop:~/goserver$ vim Dockerfile
+kspohn@kspohn-HP-Laptop:~/goserver$ ls -al
+total 8016
+drwxrwxr-x    2 kspohn kspohn    4096 Nov 10 14:04 .
+drwxr-x--x+ 149 kspohn kspohn   57344 Nov 10 13:52 ..
+-rwxrwxr-x    1 kspohn kspohn 8128590 Nov 10 13:58 boot-dev-docker-go-server
+-rw-rw-r--    1 kspohn kspohn     136 Nov 10 14:04 Dockerfile
+-rwxrwxr-x    1 kspohn kspohn      65 Nov 10 13:58 go.mod
+-rw-rw-r--    1 kspohn kspohn     710 Nov 10 13:54 main.go
+kspohn@kspohn-HP-Laptop:~/goserver$ vim Dockerfile
+kspohn@kspohn-HP-Laptop:~/goserver$ docker build . -t goserver:latest
+[+] Building 3.4s (8/8) FINISHED                           docker:desktop-linux
+ => [internal] load build definition from Dockerfile                       0.0s
+ => => transferring dockerfile: 175B                                       0.0s
+ => [internal] load metadata for docker.io/library/debian:stable-slim      1.8s
+ => [auth] library/debian:pull token for registry-1.docker.io              0.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => [internal] load build context                                          0.2s
+ => => transferring context: 8.13MB                                        0.2s
+ => CACHED [1/2] FROM docker.io/library/debian:stable-slim@sha256:e024987  0.1s
+ => => resolve docker.io/library/debian:stable-slim@sha256:e0249870a90044  0.0s
+ => [2/2] COPY boot-dev-docker-go-server /bin/boot-dev-docker-go-server    0.1s
+ => exporting to image                                                     0.9s
+ => => exporting layers                                                    0.6s
+ => => exporting manifest sha256:3f48f75757480a5311422e0fd5ea1a98d15a03d8  0.0s
+ => => exporting config sha256:b83b6a18ecd6c7eab681bc9399bc2b11ef81f11c03  0.0s
+ => => exporting attestation manifest sha256:bdc1f47e2c268218248e1f33af1e  0.0s
+ => => exporting manifest list sha256:3208a9d51014bcfa712724cba609f51b0a1  0.0s
+ => => naming to docker.io/library/goserver:latest                         0.0s
+ => => unpacking to docker.io/library/goserver:latest                      0.1s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ij4xkpbl3uc9l44j4irbi3l11
+kspohn@kspohn-HP-Laptop:~/goserver$ docker run -p 8010:8010 goserver
+docker: Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: exec: "/bin/goserver": stat /bin/goserver: no such file or directory: unknown
+
+Run 'docker run --help' for more information
+kspohn@kspohn-HP-Laptop:~/goserver$ vim Dockerfile
+kspohn@kspohn-HP-Laptop:~/goserver$ docker build . -t goserver:latest
+[+] Building 1.4s (7/7) FINISHED                           docker:desktop-linux
+ => [internal] load build definition from Dockerfile                       0.0s
+ => => transferring dockerfile: 235B                                       0.0s
+ => [internal] load metadata for docker.io/library/debian:stable-slim      0.8s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => [internal] load build context                                          0.0s
+ => => transferring context: 49B                                           0.0s
+ => [1/2] FROM docker.io/library/debian:stable-slim@sha256:e0249870a90044  0.0s
+ => => resolve docker.io/library/debian:stable-slim@sha256:e0249870a90044  0.0s
+ => CACHED [2/2] COPY boot-dev-docker-go-server /bin/boot-dev-docker-go-s  0.0s
+ => exporting to image                                                     0.3s
+ => => exporting layers                                                    0.0s
+ => => exporting manifest sha256:de95cc93762e17be99401fbc0156a191a0aff770  0.0s
+ => => exporting config sha256:f3f7e37f0e9301c37a69f6d8ce16c026e12cfc8e78  0.0s
+ => => exporting attestation manifest sha256:b22d3b55d1ad026b25ba9c66aaf9  0.0s
+ => => exporting manifest list sha256:d29afe374186e6b0fae8c55295737a44ccb  0.0s
+ => => naming to docker.io/library/goserver:latest                         0.0s
+ => => unpacking to docker.io/library/goserver:latest                      0.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/qpmkie2on0utn9ht1i0q1a3j0
+kspohn@kspohn-HP-Laptop:~/goserver$ docker run -p 8010:8010 goserver
+docker: Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: exec: "chmod +x /bin/boot-dev-docker-go-server;": stat chmod +x /bin/boot-dev-docker-go-server;: no such file or directory: unknown
+
+Run 'docker run --help' for more information
+kspohn@kspohn-HP-Laptop:~/goserver$ vim Dockerfile
+kspohn@kspohn-HP-Laptop:~/goserver$ docker build . -t goserver:latest
+[+] Building 3.3s (7/7) FINISHED                           docker:desktop-linux
+ => [internal] load build definition from Dockerfile                       0.0s
+ => => transferring dockerfile: 192B                                       0.0s
+ => [internal] load metadata for docker.io/library/debian:stable-slim      2.8s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => [internal] load build context                                          0.0s
+ => => transferring context: 49B                                           0.0s
+ => [1/2] FROM docker.io/library/debian:stable-slim@sha256:e0249870a90044  0.0s
+ => => resolve docker.io/library/debian:stable-slim@sha256:e0249870a90044  0.0s
+ => CACHED [2/2] COPY boot-dev-docker-go-server /bin/boot-dev-docker-go-s  0.0s
+ => exporting to image                                                     0.2s
+ => => exporting layers                                                    0.0s
+ => => exporting manifest sha256:1c83c7a74aaecfe6de6b54123f66a787073350ab  0.0s
+ => => exporting config sha256:6a0bc7e9281135f2c87c57e15812bc6a479766db61  0.0s
+ => => exporting attestation manifest sha256:3d16564228ff1b4cd8e501d34a4e  0.0s
+ => => exporting manifest list sha256:28ab90a033802445afb3f123dc6a26354fb  0.0s
+ => => naming to docker.io/library/goserver:latest                         0.0s
+ => => unpacking to docker.io/library/goserver:latest                      0.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/z00uxunrgl4gr7fjzwc92if3w
+kspohn@kspohn-HP-Laptop:~/goserver$ docker run -p 8010:8010 goserver
+server started on  8010
+^Ckspohn@kspohn-HP-Laptop:~/goserver$ vim Dockerfile
+kspohn@kspohn-HP-Laptop:~/goserver$ ls -al
+total 8016
+drwxrwxr-x    2 kspohn kspohn    4096 Nov 10 14:08 .
+drwxr-x--x+ 149 kspohn kspohn   57344 Nov 10 13:52 ..
+-rwxrwxr-x    1 kspohn kspohn 8128590 Nov 10 13:58 boot-dev-docker-go-server
+-rw-rw-r--    1 kspohn kspohn     153 Nov 10 14:08 Dockerfile
+-rwxrwxr-x    1 kspohn kspohn      65 Nov 10 13:58 go.mod
+-rw-rw-r--    1 kspohn kspohn     710 Nov 10 13:54 main.go
+kspohn@kspohn-HP-Laptop:~/goserver$ vim main.go 
+kspohn@kspohn-HP-Laptop:~/goserver$ export PORT="8999"
+kspohn@kspohn-HP-Laptop:~/goserver$ vim Dockerfile
+kspohn@kspohn-HP-Laptop:~/goserver$ go build
+kspohn@kspohn-HP-Laptop:~/goserver$ ls -al
+total 8016
+drwxrwxr-x    2 kspohn kspohn    4096 Nov 10 14:11 .
+drwxr-x--x+ 149 kspohn kspohn   57344 Nov 10 13:52 ..
+-rwxrwxr-x    1 kspohn kspohn 8128718 Nov 10 14:11 boot-dev-docker-go-server
+-rw-rw-r--    1 kspohn kspohn     167 Nov 10 14:11 Dockerfile
+-rwxrwxr-x    1 kspohn kspohn      65 Nov 10 13:58 go.mod
+-rw-rw-r--    1 kspohn kspohn     720 Nov 10 14:10 main.go
+kspohn@kspohn-HP-Laptop:~/goserver$ docker build . -t goserver:latest
+[+] Building 4.1s (8/8) FINISHED                           docker:desktop-linux
+ => [internal] load build definition from Dockerfile                       0.0s
+ => => transferring dockerfile: 206B                                       0.0s
+ => [internal] load metadata for docker.io/library/debian:stable-slim      1.4s
+ => [auth] library/debian:pull token for registry-1.docker.io              0.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => [internal] load build context                                          0.1s
+ => => transferring context: 8.13MB                                        0.1s
+ => CACHED [1/2] FROM docker.io/library/debian:stable-slim@sha256:e024987  0.1s
+ => => resolve docker.io/library/debian:stable-slim@sha256:e0249870a90044  0.1s
+ => [2/2] COPY boot-dev-docker-go-server /bin/boot-dev-docker-go-server    0.1s
+ => exporting to image                                                     2.1s
+ => => exporting layers                                                    1.0s
+ => => exporting manifest sha256:7c04109e5abc9b08774673b1d743c744a4d8d4fe  0.2s
+ => => exporting config sha256:5d5f0dd5f6bc77133b8895115e49892cd8bb272823  0.1s
+ => => exporting attestation manifest sha256:4bbacf13395af1d41b8d3671ee49  0.2s
+ => => exporting manifest list sha256:23ecbbb6ea207b59c9477fd15f0c6ebb0c9  0.2s
+ => => naming to docker.io/library/goserver:latest                         0.0s
+ => => unpacking to docker.io/library/goserver:latest                      0.2s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/9z84kvxcyq680afqovrsouuo7
+kspohn@kspohn-HP-Laptop:~/goserver$ docker run -p 8991:8991 goserver
+server started on  8991
+^Ckspohn@kspohn-HP-Laptop:~/goserver$ python3 --version
+Python 3.12.3
+
+
+Assignment
+
+    Rebuild the Go binary:
+
+GOOS=linux GOARCH=amd64 go build
+
+    Rebuild the image. You'll need to use a name that corresponds to your namespace on Docker Hub. Swap out USERNAME for your Docker Hub username.
+
+docker build . -t USERNAME/goserver
+
+    Run your image in a container to make sure it still works:
+
+docker run -p 8991:8991 USERNAME/goserver
+
+    Push the image to Docker Hub:
+
+docker push USERNAME/goserver
+
+If everything worked, you should be able to refresh your repositories page and see your new image! By default, Docker Hub makes your images public, so anyone can pull them.
+
+Answer the question.
+Assignment
+
+    Rebuild the Go binary:
+
+GOOS=linux GOARCH=amd64 go build
+
+    Rebuild the image. You'll need to use a name that corresponds to your namespace on Docker Hub. Swap out USERNAME for your Docker Hub username.
+
+docker build . -t USERNAME/goserver
+
+    Run your image in a container to make sure it still works:
+
+docker run -p 8991:8991 USERNAME/goserver
+
+    Push the image to Docker Hub:
+
+docker push USERNAME/goserver
+
+If everything worked, you should be able to refresh your repositories page and see your new image! By default, Docker Hub makes your images public, so anyone can pull them.
+
+Answer the question.
+Assignment
+
+    Rebuild the Go binary:
+
+GOOS=linux GOARCH=amd64 go build
+
+    Rebuild the image. You'll need to use a name that corresponds to your namespace on Docker Hub. Swap out USERNAME for your Docker Hub username.
+
+docker build . -t USERNAME/goserver
+
+    Run your image in a container to make sure it still works:
+
+docker run -p 8991:8991 USERNAME/goserver
+
+    Push the image to Docker Hub:
+
+docker push USERNAME/goserver
+
+If everything worked, you should be able to refresh your repositories page and see your new image! By default, Docker Hub makes your images public, so anyone can pull them.
+
+Answer the question.
+Assignment
+
+    Rebuild the Go binary:
+
+GOOS=linux GOARCH=amd64 go build
+
+    Rebuild the image. You'll need to use a name that corresponds to your namespace on Docker Hub. Swap out USERNAME for your Docker Hub username.
+
+docker build . -t USERNAME/goserver
+
+    Run your image in a container to make sure it still works:
+
+docker run -p 8991:8991 USERNAME/goserver
+
+    Push the image to Docker Hub:
+
+docker push USERNAME/goserver
+
+If everything worked, you should be able to refresh your repositories page and see your new image! By default, Docker Hub makes your images public, so anyone can pull them.
+
+Answer the question.
+Assignment
+
+    Rebuild the Go binary:
+
+GOOS=linux GOARCH=amd64 go build
+
+    Rebuild the image. You'll need to use a name that corresponds to your namespace on Docker Hub. Swap out USERNAME for your Docker Hub username.
+
+docker build . -t USERNAME/goserver
+
+    Run your image in a container to make sure it still works:
+
+docker run -p 8991:8991 USERNAME/goserver
+
+    Push the image to Docker Hub:
+
+docker push USERNAME/goserver
+
+If everything worked, you should be able to refresh your repositories page and see your new image! By default, Docker Hub makes your images public, so anyone can pull them.
+
+Answer the question.
+
+Delete and Pull
+
+Let's delete our local copy of the image, then pull it back down from Docker Hub. Just like with GitHub, the nice thing about having images in the cloud is that if something happens to your computer, or you're working on another machine, you can always pull down your images.
+Assignment
+
+    Remove your local USERNAME/goserver image:
+
+docker image rm USERNAME/goserver
+
+    Pull it back down from Docker Hub:
+
+docker pull USERNAME/goserver
+
+    Run it to make sure it works:
+
+docker run -p 8991:8991 USERNAME/goserver
+
+With the container running, run and submit the CLI tests.
+Assignment
+
+    Remove your local USERNAME/goserver image:
+
+docker image rm USERNAME/goserver
+
+    Pull it back down from Docker Hub:
+
+docker pull USERNAME/goserver
+
+    Run it to make sure it works:
+
+docker run -p 8991:8991 USERNAME/goserver
+
+With the container running, run and submit the CLI tests.
+Assignment
+
+    Remove your local USERNAME/goserver image:
+
+docker image rm USERNAME/goserver
+
+    Pull it back down from Docker Hub:
+
+docker pull USERNAME/goserver
+
+    Run it to make sure it works:
+
+docker run -p 8991:8991 USERNAME/goserver
+
+With the container running, run and submit the CLI tests.
+Assignment
+
+    Remove your local USERNAME/goserver image:
+
+docker image rm USERNAME/goserver
+
+    Pull it back down from Docker Hub:
+
+docker pull USERNAME/goserver
+
+    Run it to make sure it works:
+
+docker run -p 8991:8991 USERNAME/goserver
+
+With the container running, run and submit the CLI tests.
+Assignment
+
+    Remove your local USERNAME/goserver image:
+
+docker image rm USERNAME/goserver
+
+    Pull it back down from Docker Hub:
+
+docker pull USERNAME/goserver
+
+    Run it to make sure it works:
+
+docker run -p 8991:8991 USERNAME/goserver
+
+With the container running, run and submit the CLI tests.
+
+
+Assignment
+
+    Update the Go code of your server:
+        Replace: <p> Hello from Docker! I'm a Go server. </p>
+        With: <p> Hi Docker, I pushed a new version. </p>
+    Compile the new go binary: GOOS=linux GOARCH=amd64 go build
+    Rebuild the Docker image. Make sure to use the same name as before, but this time, add a new tag to the end of the image name:
+
+docker build . -t USERNAME/goserver:0.2.0
+
+    Run the new image:
+
+docker run -p 8991:8991 USERNAME/goserver:0.2.0
+
+    Open your browser and navigate to http://localhost:8991. You should see the new version of the server running!
+    Push the new image up to Docker Hub. This time, you need to specify the tag as well:
+
+docker push USERNAME/goserver:0.2.0
+
+    Navigate to your repo on DockerHub, and now you should see 2 images with different tags.
+    Stop and remove the new container you just started.
+    Delete the local images so that you have no reference on your local machine. Pull and run the new version from Docker Hub.
+
+docker pull USERNAME/goserver:0.2.0
+docker run -p 8991:8991 USERNAME/goserver:0.2.0
+
+With the container running, run and submit the CLI tests.
+Assignment
+
+    Update the Go code of your server:
+        Replace: <p> Hello from Docker! I'm a Go server. </p>
+        With: <p> Hi Docker, I pushed a new version. </p>
+    Compile the new go binary: GOOS=linux GOARCH=amd64 go build
+    Rebuild the Docker image. Make sure to use the same name as before, but this time, add a new tag to the end of the image name:
+
+docker build . -t USERNAME/goserver:0.2.0
+
+    Run the new image:
+
+docker run -p 8991:8991 USERNAME/goserver:0.2.0
+
+    Open your browser and navigate to http://localhost:8991. You should see the new version of the server running!
+    Push the new image up to Docker Hub. This time, you need to specify the tag as well:
+
+docker push USERNAME/goserver:0.2.0
+
+    Navigate to your repo on DockerHub, and now you should see 2 images with different tags.
+    Stop and remove the new container you just started.
+    Delete the local images so that you have no reference on your local machine. Pull and run the new version from Docker Hub.
+
+docker pull USERNAME/goserver:0.2.0
+docker run -p 8991:8991 USERNAME/goserver:0.2.0
+
+With the container running, run and submit the CLI tests.
+Assignment
+
+    Update the Go code of your server:
+        Replace: <p> Hello from Docker! I'm a Go server. </p>
+        With: <p> Hi Docker, I pushed a new version. </p>
+    Compile the new go binary: GOOS=linux GOARCH=amd64 go build
+    Rebuild the Docker image. Make sure to use the same name as before, but this time, add a new tag to the end of the image name:
+
+docker build . -t USERNAME/goserver:0.2.0
+
+    Run the new image:
+
+docker run -p 8991:8991 USERNAME/goserver:0.2.0
+
+    Open your browser and navigate to http://localhost:8991. You should see the new version of the server running!
+    Push the new image up to Docker Hub. This time, you need to specify the tag as well:
+
+docker push USERNAME/goserver:0.2.0
+
+    Navigate to your repo on DockerHub, and now you should see 2 images with different tags.
+    Stop and remove the new container you just started.
+    Delete the local images so that you have no reference on your local machine. Pull and run the new version from Docker Hub.
+
+docker pull USERNAME/goserver:0.2.0
+docker run -p 8991:8991 USERNAME/goserver:0.2.0
+
+With the container running, run and submit the CLI tests.
+Assignment
+
+    Update the Go code of your server:
+        Replace: <p> Hello from Docker! I'm a Go server. </p>
+        With: <p> Hi Docker, I pushed a new version. </p>
+    Compile the new go binary: GOOS=linux GOARCH=amd64 go build
+    Rebuild the Docker image. Make sure to use the same name as before, but this time, add a new tag to the end of the image name:
+
+docker build . -t USERNAME/goserver:0.2.0
+
+    Run the new image:
+
+docker run -p 8991:8991 USERNAME/goserver:0.2.0
+
+    Open your browser and navigate to http://localhost:8991. You should see the new version of the server running!
+    Push the new image up to Docker Hub. This time, you need to specify the tag as well:
+
+docker push USERNAME/goserver:0.2.0
+
+    Navigate to your repo on DockerHub, and now you should see 2 images with different tags.
+    Stop and remove the new container you just started.
+    Delete the local images so that you have no reference on your local machine. Pull and run the new version from Docker Hub.
+
+docker pull USERNAME/goserver:0.2.0
+docker run -p 8991:8991 USERNAME/goserver:0.2.0
+
+With the container running, run and submit the CLI tests.
+
+docker build -t bootdotdev/awesomeimage:5.4.6 -t bootdotdev/awesomeimage:latest .
+docker push bootdotdev/awesomeimage --all-tags
+
+The Bigger Picture
+
+This is the last lesson, but before we go, I want to reiterate how Docker fits into the software development lifecycle, particularly at modern "DevOpsy" tech companies, because it's really important to understand.
+The Deployment Process
+
+    The developer (you) writes some new code
+    The developer commits the code to Git
+    The developer pushes a new branch to GitHub
+    The developer opens a pull request to the main branch
+    A teammate reviews the PR and approves it (if it looks good)
+    The developer merges the pull request
+    Upon merging, an automated script, perhaps a GitHub action, is started
+    The script builds the code (if it's a compiled language)
+    The script builds a new docker image with the latest program
+    The script pushes the new image to Docker Hub
+    The server that runs the containers, perhaps a Kubernetes cluster, is told there is a new version
+    The k8s cluster pulls down the latest image
+    The k8s cluster shuts down old containers as it spins up new containers of the latest image
+
+The Deployment Process
+
+    The developer (you) writes some new code
+    The developer commits the code to Git
+    The developer pushes a new branch to GitHub
+    The developer opens a pull request to the main branch
+    A teammate reviews the PR and approves it (if it looks good)
+    The developer merges the pull request
+    Upon merging, an automated script, perhaps a GitHub action, is started
+    The script builds the code (if it's a compiled language)
+    The script builds a new docker image with the latest program
+    The script pushes the new image to Docker Hub
+    The server that runs the containers, perhaps a Kubernetes cluster, is told there is a new version
+    The k8s cluster pulls down the latest image
+    The k8s cluster shuts down old containers as it spins up new containers of the latest image
+
+It's Never the Same
+
+While the deployment process I've outlined above is a common one, especially at newer "cloud native" companies, two companies rarely have identical processes. Instead of GitHub, it might be GitLab. Instead of Docker Hub, it might be ECR. Instead of Kubernetes, it might be Docker Swarm or a more managed service.
+
+That said, I hope this helps give you an idea of what to expect in the wild.
+
+Click to hide video
+Your browser does not support playing HTML5 video. You can instead. Here is a description of the content: docker with CICD
+
+It's Never the Same
+
+While the deployment process I've outlined above is a common one, especially at newer "cloud native" companies, two companies rarely have identical processes. Instead of GitHub, it might be GitLab. Instead of Docker Hub, it might be ECR. Instead of Kubernetes, it might be Docker Swarm or a more managed service.
+
+That said, I hope this helps give you an idea of what to expect in the wild.
+
+Click to hide video
+Your browser does not support playing HTML5 video. You can instead. Here is a description of the content: docker with CICD
+
+
+

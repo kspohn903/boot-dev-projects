@@ -1,0 +1,280 @@
+Setting up continuous integration...
+Configuring project boards...
+Project setup complete!
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch4_l5.py
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch4_l5.py
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch4_l5.py
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch4_l5.py
+Task 42 has been completed successfully.
+task 99 is still in progress and cannot be completed.
+Task 101 status updated to Blocked.
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch4_l5.py
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch4_l8.py
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch4_l8.py
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch4_l8.py
+  File "/home/kspohn/boot_dev_project_directories/web_client_server_architecture/ch4_l8.py", line 16
+    await main()
+    ^^^^^^^^^^^^
+SyntaxError: 'await' outside function
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch4_l8.py
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch4_l8.py
+Task 123 has been completed successfully.
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch4_l8.py
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch4_l8.py
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch4_l8.py
+Task 123 has been completed successfully.
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch4_l9.py
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch4_l9.py
+  File "/home/kspohn/boot_dev_project_directories/web_client_server_architecture/ch4_l9.py", line 28
+    await main()
+    ^^^^^^^^^^^^
+SyntaxError: 'await' outside function
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch4_l9.py
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch4_l9.py
+Traceback (most recent call last):
+  File "/home/kspohn/boot_dev_project_directories/web_client_server_architecture/ch4_l9.py", line 1, in <module>
+    from pyodide.http import pyfetch
+ModuleNotFoundError: No module named 'pyodide'
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch4_l9.py
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ source ~/boot_dev_project_directories/venv/bin/activate
+bash: /home/kspohn/boot_dev_project_directories/venv/bin/activate: No such file or directory
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 -m venv ~/boot_dev_project_directories/required_python_modules
+kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ source ~/boot_dev_project_directories/required_python_modules/bin/activate
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ pip install pyodide
+Collecting pyodide
+  Downloading pyodide-0.0.2.tar.gz (19 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... error
+  error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [21 lines of output]
+      Traceback (most recent call last):
+        File "/home/kspohn/boot_dev_project_directories/required_python_modules/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+          main()
+        File "/home/kspohn/boot_dev_project_directories/required_python_modules/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+          json_out['return_val'] = hook(**hook_input['kwargs'])
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/home/kspohn/boot_dev_project_directories/required_python_modules/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 118, in get_requires_for_build_wheel
+          return hook(config_settings)
+                 ^^^^^^^^^^^^^^^^^^^^^
+        File "/tmp/pip-build-env-f5l8ahmb/overlay/lib/python3.12/site-packages/setuptools/build_meta.py", line 331, in get_requires_for_build_wheel
+          return self._get_build_requires(config_settings, requirements=[])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/tmp/pip-build-env-f5l8ahmb/overlay/lib/python3.12/site-packages/setuptools/build_meta.py", line 301, in _get_build_requires
+          self.run_setup()
+        File "/tmp/pip-build-env-f5l8ahmb/overlay/lib/python3.12/site-packages/setuptools/build_meta.py", line 512, in run_setup
+          super().run_setup(setup_script=setup_script)
+        File "/tmp/pip-build-env-f5l8ahmb/overlay/lib/python3.12/site-packages/setuptools/build_meta.py", line 317, in run_setup
+          exec(code, locals())
+        File "<string>", line 7, in <module>
+      ValueError: Pyodide is a Python distribution that runs in the browser or Node.js. It cannot be installed from PyPi.
+                  See https://github.com/pyodide/pyodide for how to use Pyodide.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× Getting requirements to build wheel did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ ls -al
+total 28
+drwxrwxr-x  3 kspohn kspohn 4096 Nov  4 16:02 .
+drwxrwxr-x 17 kspohn kspohn 4096 Nov  4 16:03 ..
+-rw-rw-r--  1 kspohn kspohn 1003 Nov  4 15:29 ch4_l1.py
+-rw-rw-r--  1 kspohn kspohn 1767 Nov  4 15:50 ch4_l5.py
+-rw-rw-r--  1 kspohn kspohn  390 Nov  4 15:58 ch4_l8.py
+-rw-rw-r--  1 kspohn kspohn  636 Nov  4 16:02 ch4_l9.py
+drwxrwxr-x  2 kspohn kspohn 4096 Nov  4 15:57 __pycache__
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch4_l9.py 
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ pip install aiohttp
+Collecting aiohttp
+  Downloading aiohttp-3.13.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp)
+  Using cached aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp)
+  Using cached aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting attrs>=17.3.0 (from aiohttp)
+  Downloading attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp)
+  Downloading frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (20 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp)
+  Downloading multidict-6.7.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+Collecting propcache>=0.2.0 (from aiohttp)
+  Downloading propcache-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (13 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp)
+  Downloading yarl-1.22.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (75 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.1/75.1 kB 1.5 MB/s eta 0:00:00
+Collecting typing-extensions>=4.2 (from aiosignal>=1.4.0->aiohttp)
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting idna>=2.0 (from yarl<2.0,>=1.17.0->aiohttp)
+  Using cached idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Downloading aiohttp-3.13.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 8.4 MB/s eta 0:00:00
+Using cached aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+Using cached aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Downloading attrs-25.4.0-py3-none-any.whl (67 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.6/67.6 kB 11.1 MB/s eta 0:00:00
+Downloading frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (242 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 242.4/242.4 kB 11.0 MB/s eta 0:00:00
+Downloading multidict-6.7.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (256 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 256.1/256.1 kB 11.2 MB/s eta 0:00:00
+Downloading propcache-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (221 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 221.6/221.6 kB 11.0 MB/s eta 0:00:00
+Downloading yarl-1.22.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (377 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 377.3/377.3 kB 11.3 MB/s eta 0:00:00
+Using cached idna-3.11-py3-none-any.whl (71 kB)
+Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Installing collected packages: typing-extensions, propcache, multidict, idna, frozenlist, attrs, aiohappyeyeballs, yarl, aiosignal, aiohttp
+Successfully installed aiohappyeyeballs-2.6.1 aiohttp-3.13.2 aiosignal-1.4.0 attrs-25.4.0 frozenlist-1.8.0 idna-3.11 multidict-6.7.0 propcache-0.4.1 typing-extensions-4.15.0 yarl-1.22.0
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch4_l9.py 
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch5_l4.py
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch5_l4.py
+Got old project:
+- title: Product Roadmap 2024, assignees: 7
+---
+Project updated!
+---
+Got new project:
+- title: Product Roadmap 2025, assignees: 1
+---
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch6_l1.py
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch6_l1.py
+Got some projects from the server.
+- title: Marketing Campaign Q4, assignees: 6
+- title: Product Roadmap 2024, assignees: 7
+- title: Content Calendar, assignees: 5
+- title: Team Onboarding, assignees: 4
+- title: Feature Requests, assignees: 2
+- title: Sprint Planning, assignees: 3
+- title: Client Feedback, assignees: 2
+- title: Website Redesign, assignees: 7
+- title: Budget Tracker, assignees: 3
+- title: Event Planning, assignees: 1
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch6_l5.py
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch6_l5.py
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch6_l1.py
+Got some projects from the server.
+- title: Marketing Campaign Q4, assignees: 6
+- title: Product Roadmap 2024, assignees: 7
+- title: Content Calendar, assignees: 5
+- title: Team Onboarding, assignees: 4
+- title: Feature Requests, assignees: 2
+- title: Sprint Planning, assignees: 3
+- title: Client Feedback, assignees: 2
+- title: Website Redesign, assignees: 7
+- title: Budget Tracker, assignees: 3
+- title: Event Planning, assignees: 1
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch6_l5.py
+Traceback (most recent call last):
+  File "/home/kspohn/boot_dev_project_directories/web_client_server_architecture/ch6_l5.py", line 6, in <module>
+    api_key = generate_key()
+              ^^^^^^^^^^^^
+NameError: name 'generate_key' is not defined
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch6_l5.py
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ pyth3 ch6_l5.py
+pyth3: command not found
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch6_l5.py
+Traceback (most recent call last):
+  File "/home/kspohn/boot_dev_project_directories/web_client_server_architecture/ch6_l5.py", line 6, in <module>
+    api_key = generate_key()
+              ^^^^^^^^^^^^
+NameError: name 'generate_key' is not defined
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch6_l5.py
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch6_l5.py
+Project 'Marketing Campaign Q4' fetched. Data: {"assignees": 6, "completed": false, "id": "0194fdc2-fa2f-4cc0-81d3-ff12045b73c8", "title": "Marketing Campaign Q4"}
+Traceback (most recent call last):
+  File "/home/kspohn/boot_dev_project_directories/web_client_server_architecture/ch6_l5.py", line 65, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/kspohn/boot_dev_project_directories/web_client_server_architecture/ch6_l5.py", line 55, in main
+    await update_project_by_id(project_id, project)
+  File "/home/kspohn/boot_dev_project_directories/web_client_server_architecture/ch6_l5.py", line 7, in update_project_by_id
+    path = f"https://api.boot.dev/v1/courses_rest_api/learn-http/projects/{project_id:d}"
+                                                                          ^^^^^^^^^^^^^^
+ValueError: Unknown format code 'd' for object of type 'str'
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch6_l5.py
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch6_l5.py
+Project 'Marketing Campaign Q4' fetched. Data: {"assignees": 6, "completed": false, "id": "0194fdc2-fa2f-4cc0-81d3-ff12045b73c8", "title": "Marketing Campaign Q4"}
+Project 'Marketing Campaign Q4' was completed!
+Project 'Marketing Campaign Q4' fetched. Data: {"assignees": 6, "completed": true, "id": "0194fdc2-fa2f-4cc0-81d3-ff12045b73c8", "title": "Marketing Campaign Q4"}
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch6_l6.py
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch6_l6.py
+completed: False
+id: 0194fdc2-fa2f-4cc0-81d3-ff12045b73c8
+title: Unfidget the widget
+assignees: 14
+---
+completed: True
+id: 2f8282cb-e2f9-496f-b144-c0aa4ced56db
+title: Re-spaghettify the codebase - things broke
+assignees: 2
+---
+invalid json string
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch7_l1.py
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch7_l1.py
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch7_l1.py
+User name: Lane, Role: Grand Magus, experience: 14, Remote: False
+User name: Allan, Role: Backend Developer, experience: 1, Remote: True
+User name: Tim, Role: Frontend Developer, experience: 6, Remote: False
+User name: Sam, Role: Talks about VIM, experience: 8, Remote: False
+User name: Adam, Role: Fullstack Developer, experience: 9, Remote: True
+User name: Ben, Role: DevOps Engineer, experience: 6, Remote: False
+User name: Erika, Role: SecOps, experience: 8, Remote: False
+User name: Danielle, Role: Product Owner, experience: 6, Remote: False
+User name: Tiffany, Role: Scrum Master, experience: 8, Remote: False
+User name: John, Role: Project Manager, experience: 1, Remote: True
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch7_l7.py
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch7_l7.py
+Status for existing user: 200
+Status for non-existent user: 404
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch7_l8.py
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch7_l8.py
+--- Initial User Data ---
+User name: Tim, Role: Frontend Developer, experience: 6, Remote: False
+
+Updating user with id: 2f8282cb-e2f9-496f-b144-c0aa4ced56db
+--- Updated User Data ---
+User name: Dan, Role: Junior Developer, experience: 2, Remote: True
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch7_l11.py
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ vim ch7_l11.py
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ python3 ch7_l11.py
+Logging user records:
+User name: Lane, Role: Grand Magus, experience: 14, Remote: False
+User name: Allan, Role: Backend Developer, experience: 1, Remote: True
+User name: Tim, Role: Frontend Developer, experience: 6, Remote: False
+User name: Sam, Role: Talks about VIM, experience: 8, Remote: False
+User name: Adam, Role: Fullstack Developer, experience: 9, Remote: True
+User name: Ben, Role: DevOps Engineer, experience: 6, Remote: False
+User name: Erika, Role: SecOps, experience: 8, Remote: False
+User name: Danielle, Role: Product Owner, experience: 6, Remote: False
+User name: Tiffany, Role: Scrum Master, experience: 8, Remote: False
+User name: John, Role: Project Manager, experience: 1, Remote: True
+---
+Deleted user with id: 0194fdc2-fa2f-4cc0-81d3-ff12045b73c8
+---
+Logging user records:
+User name: Allan, Role: Backend Developer, experience: 1, Remote: True
+User name: Tim, Role: Frontend Developer, experience: 6, Remote: False
+User name: Sam, Role: Talks about VIM, experience: 8, Remote: False
+User name: Adam, Role: Fullstack Developer, experience: 9, Remote: True
+User name: Ben, Role: DevOps Engineer, experience: 6, Remote: False
+User name: Erika, Role: SecOps, experience: 8, Remote: False
+User name: Danielle, Role: Product Owner, experience: 6, Remote: False
+User name: Tiffany, Role: Scrum Master, experience: 8, Remote: False
+User name: John, Role: Project Manager, experience: 1, Remote: True
+---
+(required_python_modules) kspohn@kspohn-HP-Laptop:~/boot_dev_project_directories/web_client_server_architecture$ 
+

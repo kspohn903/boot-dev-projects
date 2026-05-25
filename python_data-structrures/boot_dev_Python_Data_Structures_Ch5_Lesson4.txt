@@ -1,0 +1,67 @@
+def memoize(f):
+    """
+    A decorator that memoizes a function 'f'.
+    """
+    cache = {}
+
+    def wrapper(*args):
+        if args not in cache:
+           cache[args] = f(*args)
+        return cache[args]
+    
+    return wrapper
+
+@memoize
+def fibonacci(n):
+    """
+    A recursive function to calculate the nth Fibonacci number with memoization.
+    Args:
+        n (int): The position in the Fibonacci sequence.
+        
+    Returns:
+        int: The nth Fibonacci number.
+    """
+    # Base cases for the recursion
+    if n <= 1:
+       return n
+    # Recursive step, which will use the memoized results
+    return fibonacci(n-1) + fibonacci(n-2)
+
+# Alternative implementation without a decorator for clarity
+def fibonacci_with_memo(n, cache = {}):
+    """
+    A recursive function to calculate the nth Fibonacci
+    number with a manual cache for memoization.
+    Args:
+        n (int): The position in the Fibonacci sequence.
+        cache (dict): A dictionary used to store cached
+        results.
+    Returns:
+        int: The nth Fibonacci number.
+    """
+    if n in cache:
+       return cache[n]
+    if n <= 1:
+       return n
+    # Calculate the result and store it in the cache
+    result = fibonacci_with_memo(n-1, cache) + fibonacci_with_memo(n-2, cache)
+    cache[n] = result
+    return result
+
+# Example Usage
+# if __name__ == '__main__':
+    # n = 10
+    # print(f"The {n}th Fibonacci number (with decorator):
+    # {fibonacci(n)}")
+    
+    # n = 40
+    # print(f"The {n}th Fibonacci number (with decorator):
+    # {fibonacci(n)}")
+    
+    # Using the manual memoization function
+    # print(f"\nUsing the manual memoization function:")
+    # print(f"The 10th Fibonacci number:
+    # {fibonacci_with_memo(10)}")
+    # print(f"The 40th Fibonacci number: 
+    # {fibonacci_with_memo(40)}")
+

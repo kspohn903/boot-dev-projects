@@ -20,7 +20,18 @@ class Line: # HAS POINTS
         )
 
 class Cell: # HAS POINTS AS SQUARE
-    __slots__ = ['has_left_wall', 'has_right_wall', 'has_top_wall', 'has_bottom_wall', 'visited', '_x1', '_x2', '_y1', '_y2', '_win']
+    __slots__ = [
+            'has_left_wall', 
+            'has_right_wall', 
+            'has_top_wall', 
+            'has_bottom_wall', 
+            'visited', 
+            '_x1', 
+            '_x2', 
+            '_y1', 
+            '_y2', 
+            '_win'
+    ]
     
     def __init__(self, win=None):    
         self.has_left_wall = True

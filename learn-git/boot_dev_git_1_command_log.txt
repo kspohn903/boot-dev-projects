@@ -1,0 +1,637 @@
+kspohn@kspohn-HP-Laptop:~$ bootdev run 65e6780d-fdde-447a-9898-b30b73793a3a -s
+╭──────────────────────────────────────╮
+│ ?  Running: echo "rebasing is based" │
+╰┬─────────────────────────────────────╯
+ ├─  ?  Expect exit code 0
+ ├─  ?  Expect stdout to contain all of:
+ │       - 'rebasing is based'          
+
+ > Command exit code: 0
+ > Command stdout:
+
+rebasing is based
+
+
+All tests passed! 🎉
+
+Return to your browser to continue with the next lesson.
+
+kspohn@kspohn-HP-Laptop:~$ bootdev run 0552b1c3-49d9-4d4b-b44d-e91188a79c92 -s
+╭─────────────────────────╮
+│ ?  Running: git version │
+╰┬────────────────────────╯
+ ├─  ?  Expect exit code 0
+ ├─  ?  Expect stdout to contain all of:
+ │       - 'git version 2'              
+
+ > Command exit code: 0
+ > Command stdout:
+
+git version 2.43.0
+╭─────────────────────────────╮
+│ ?  Running: git config list │
+╰┬────────────────────────────╯
+ ├─  ?  Expect exit code 0
+
+ > Command exit code: 1
+ > Command stdout:
+
+error: key does not contain a section: list
+                                    
+                                    
+Error: expected status code 0, got 1
+
+kspohn@kspohn-HP-Laptop:~$ sudo apt update
+sudo apt install software-properties-common # enables add-apt-repository command 
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt install git
+[sudo] password for kspohn: 
+Reading package lists... Done
+E: Could not get lock /var/lib/apt/lists/lock. It is held by process 92346 (aptd)
+N: Be aware that removing the lock file is not a solution and may break your system.
+E: Unable to lock directory /var/lib/apt/lists/
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is heWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 92346 (aptd)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is heWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 92346 (aptd)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is heWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 92346 (aptd)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is heWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 92346 (aptd)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is heWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 92346 (aptd)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is heWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 92346 (aptd)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is heWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 92346 (aptd)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is heWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 92346 (aptd)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is heWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 92346 (aptd)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is heWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 92346 (aptd)      
+Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is heWaiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 92346 (aptd)       
+Reading package lists... 0%                                                     Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+software-properties-common is already the newest version (0.99.49.3).
+software-properties-common set to manually installed.
+The following packages were automatically installed and are no longer required:
+  linux-headers-6.14.0-32-generic linux-hwe-6.14-headers-6.14.0-32
+  linux-hwe-6.14-tools-6.14.0-32 linux-image-6.14.0-32-generic
+  linux-modules-6.14.0-32-generic linux-modules-extra-6.14.0-32-generic
+  linux-tools-6.14.0-32-generic
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+PPA publishes dbgsym, you may need to include 'main/debug' component
+Repository: 'Types: deb
+URIs: https://ppa.launchpadcontent.net/git-core/ppa/ubuntu/
+Suites: noble
+Components: main
+'
+Description:
+The most current stable version of Git for Ubuntu.
+
+For release candidates, go to https://launchpad.net/~git-core/+archive/candidate .
+More info: https://launchpad.net/~git-core/+archive/ubuntu/ppa
+Adding repository.
+Press [ENTER] to continue or Ctrl-c to cancel.
+Get:1 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Hit:2 https://brave-browser-apt-release.s3.brave.com stable InRelease          
+Hit:3 https://download.docker.com/linux/ubuntu noble InRelease                 
+Get:4 https://packages.microsoft.com/repos/code stable InRelease [3,590 B]     
+Get:5 https://packages.microsoft.com/repos/code stable/main amd64 Packages [20.4 kB]
+Hit:6 http://us.archive.ubuntu.com/ubuntu noble InRelease                      
+Get:7 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1,270 kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]     
+Get:9 http://us.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]   
+Get:10 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.5 kB]
+Get:11 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:12 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [52.3 kB]
+Get:13 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Get:14 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [175 kB]
+Get:15 http://us.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:16 http://us.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [377 kB]
+Get:17 http://us.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:18 http://us.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7,128 B]
+Get:19 http://us.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [212 B]
+Get:20 http://us.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [11.0 kB]
+Get:21 http://us.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:22 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble InRelease [24.3 kB]
+Get:23 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble/main amd64 Packages [2,860 B]
+Get:24 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble/main Translation-en [2,128 B]
+Fetched 2,348 kB in 6s (383 kB/s)                                              
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-6.14.0-32-generic linux-hwe-6.14-headers-6.14.0-32
+  linux-hwe-6.14-tools-6.14.0-32 linux-image-6.14.0-32-generic
+  linux-modules-6.14.0-32-generic linux-modules-extra-6.14.0-32-generic
+  linux-tools-6.14.0-32-generic
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  git-man
+Suggested packages:
+  git-doc git-email git-gui gitk gitweb git-cvs git-svn
+The following packages will be upgraded:
+  git git-man
+2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 9,315 kB of archives.
+After this operation, 13.3 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble/main amd64 git amd64 1:2.51.2-0ppa1~ubuntu24.04.1 [7,037 kB]
+Get:2 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu noble/main amd64 git-man all 1:2.51.2-0ppa1~ubuntu24.04.1 [2,278 kB]
+Fetched 9,315 kB in 18s (528 kB/s)                                             
+(Reading database ... 424687 files and directories currently installed.)
+Preparing to unpack .../git_1%3a2.51.2-0ppa1~ubuntu24.04.1_amd64.deb ...
+Unpacking git (1:2.51.2-0ppa1~ubuntu24.04.1) over (1:2.43.0-1ubuntu7.3) ...
+Preparing to unpack .../git-man_1%3a2.51.2-0ppa1~ubuntu24.04.1_all.deb ...
+Unpacking git-man (1:2.51.2-0ppa1~ubuntu24.04.1) over (1:2.43.0-1ubuntu7.3) ...
+Setting up git-man (1:2.51.2-0ppa1~ubuntu24.04.1) ...
+Setting up git (1:2.51.2-0ppa1~ubuntu24.04.1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+kspohn@kspohn-HP-Laptop:~$ bootdev run 0552b1c3-49d9-4d4b-b44d-e91188a79c92 -s
+╭─────────────────────────╮
+│ ?  Running: git version │
+╰┬────────────────────────╯
+ ├─  ?  Expect exit code 0
+ ├─  ?  Expect stdout to contain all of:
+ │       - 'git version 2'              
+╭─────────────────────────────╮
+│ ?  Running: git config list │
+╰┬────────────────────────────╯
+ ├─  ?  Expect exit code 0
+Error: failed to submit CLI lesson (code: 503): upstream connect error or disconnect/reset before headers. reset reason: remote connection failure, transport failure reason: delayed connect error: Connection refused
+                                                       kspohn@kspohn-HP-Laptop:~$ 
+kspohn@kspohn-HP-Laptop:~$ 
+
+-------------------------------------------------------------------------
+?????.....
+
+-------------------------------------------------------------------------
+All tests passed! 🎉
+
+Return to your browser to continue with the next lesson.
+
+kspohn@kspohn-HP-Laptop:~/webflyx$ git lohg
+git: 'lohg' is not a git command. See 'git --help'.
+
+The most similar command is
+	log
+kspohn@kspohn-HP-Laptop:~/webflyx$ git log
+commit 95f38088b8e7bd2dc68cdb9e7c58f44cea68342c (HEAD -> master)
+Author: Kevin Spohn <kspohn903@gmail.com>
+Date:   Mon Nov 3 09:04:40 2025 -0600
+
+    A: add contents.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ git --no-pager log -n 10
+commit 95f38088b8e7bd2dc68cdb9e7c58f44cea68342c (HEAD -> master)
+Author: Kevin Spohn <kspohn903@gmail.com>
+Date:   Mon Nov 3 09:04:40 2025 -0600
+
+    A: add contents.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ bootdev run 865b32b2-1493-48aa-b32e-a1e7418bc609 -s
+╭─────────────────────────────────────╮
+│ ?  Running: git --no-pager log -n 1 │
+╰┬────────────────────────────────────╯
+ ├─  ?  Expect exit code 0
+ ├─  ?  Expect stdout to contain all of:
+ │       - 'Author'                     
+ │       - 'Date'                       
+ │       - 'commit'                     
+
+ > Command exit code: 0
+ > Command stdout:
+
+commit 95f38088b8e7bd2dc68cdb9e7c58f44cea68342c
+Author: Kevin Spohn <kspohn903@gmail.com>
+Date:   Mon Nov 3 09:04:40 2025 -0600
+
+    A: add contents.md
+
+
+All tests passed! 🎉
+
+Return to your browser to continue with the next lesson.
+
+kspohn@kspohn-HP-Laptop:~/webflyx$ 
+kspohn@kspohn-HP-Laptop:~/webflyx$ ls .git
+COMMIT_EDITMSG  description  hooks  info  objects
+config          HEAD         index  logs  refs
+kspohn@kspohn-HP-Laptop:~/webflyx$ ls -al .git/objects/95f38088b8e7bd2dc68cdb9e7c58f44cea68342c
+ls: cannot access '.git/objects/95f38088b8e7bd2dc68cdb9e7c58f44cea68342c': No such file or directory
+kspohn@kspohn-HP-Laptop:~/webflyx$ ls -al .git/objects/
+total 28
+drwxrwxr-x 7 kspohn kspohn 4096 Nov  3 09:04 .
+drwxrwxr-x 7 kspohn kspohn 4096 Nov  3 09:04 ..
+drwxrwxr-x 2 kspohn kspohn 4096 Nov  3 09:04 5b
+drwxrwxr-x 2 kspohn kspohn 4096 Nov  3 09:04 95
+drwxrwxr-x 2 kspohn kspohn 4096 Nov  3 09:03 ef
+drwxrwxr-x 2 kspohn kspohn 4096 Nov  3 09:01 info
+drwxrwxr-x 2 kspohn kspohn 4096 Nov  3 09:01 pack
+kspohn@kspohn-HP-Laptop:~/webflyx$ cd .git/objects/
+kspohn@kspohn-HP-Laptop:~/webflyx/.git/objects$ find -name "95f38088b8e7bd2dc68cdb9e7c58f44cea68342c"
+kspohn@kspohn-HP-Laptop:~/webflyx/.git/objects$ cd ../../
+kspohn@kspohn-HP-Laptop:~/webflyx$ git log -n 10
+commit 95f38088b8e7bd2dc68cdb9e7c58f44cea68342c (HEAD -> master)
+Author: Kevin Spohn <kspohn903@gmail.com>
+Date:   Mon Nov 3 09:04:40 2025 -0600
+
+    A: add contents.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ ls -al .git/objects/95/
+total 12
+drwxrwxr-x 2 kspohn kspohn 4096 Nov  3 09:04 .
+drwxrwxr-x 7 kspohn kspohn 4096 Nov  3 09:04 ..
+-r--r--r-- 1 kspohn kspohn  138 Nov  3 09:04 f38088b8e7bd2dc68cdb9e7c58f44cea68342c
+kspohn@kspohn-HP-Laptop:~/webflyx$ xxd .git/objects/95/f38088b8e7bd2dc68cdb9e7c58f44cea68342c > /tmp/commit_object_hex.txt
+kspohn@kspohn-HP-Laptop:~/webflyx$ cat /tmp/commit_object_hex.txt 
+00000000: 7801 9dcd 4b0e c220 1485 61c7 ace2 6ec0  x...K.. ..a...n.
+00000010: 0668 7968 8cd1 b143 5770 7959 5201 d35e  .hyh...CWpyYR..^
+00000020: 5dbf b805 4727 f993 2fc7 b752 3281 b06a  ]...G'../..R2..j
+00000030: 476b 8ca0 9c14 614a 42e3 e4b8 41ed 4354  Gk....aJB...A.CT
+00000040: 38ca 490a 6b92 4685 da3a ae79 62f8 a6b9  8.I.k.F..:.yb...
+00000050: ad70 8b9f 5ce1 fe6a 7385 d3b2 fdf6 c0c7  .p..\..js.......
+00000060: cba3 607e 0ebe 9533 08a3 3b96 d272 d877  ..`~...3..;..r.w
+00000070: c959 affd 92e2 5f98 5d8f 8021 806f 9562  .Y...._.]..!.o.b
+00000080: a56d 2881 7d01 d030 3adc                 .m(.}..0:.
+kspohn@kspohn-HP-Laptop:~/webflyx$ bootdev run 4efdf7b5-dd51-40ea-99e3-4e221e24bd0f -s
+╭────────────────────────────────────────────╮
+│ ?  Running: cat /tmp/commit_object_hex.txt │
+╰┬───────────────────────────────────────────╯
+ ├─  ?  Expect exit code 0
+ ├─  ?  Expect stdout to contain all of:
+ │       - '0000000:'                   
+ │       - '0000010:'                   
+ │       - '0000020:'                   
+ │       - '0000030:'                   
+
+ > Command exit code: 0
+ > Command stdout:
+
+00000000: 7801 9dcd 4b0e c220 1485 61c7 ace2 6ec0  x...K.. ..a...n.
+00000010: 0668 7968 8cd1 b143 5770 7959 5201 d35e  .hyh...CWpyYR..^
+00000020: 5dbf b805 4727 f993 2fc7 b752 3281 b06a  ]...G'../..R2..j
+00000030: 476b 8ca0 9c14 614a 42e3 e4b8 41ed 4354  Gk....aJB...A.CT
+00000040: 38ca 490a 6b92 4685 da3a ae79 62f8 a6b9  8.I.k.F..:.yb...
+00000050: ad70 8b9f 5ce1 fe6a 7385 d3b2 fdf6 c0c7  .p..\..js.......
+00000060: cba3 607e 0ebe 9533 08a3 3b96 d272 d877  ..`~...3..;..r.w
+00000070: c959 affd 92e2 5f98 5d8f 8021 806f 9562  .Y...._.]..!.o.b
+00000080: a56d 2881 7d01 d030 3adc                 .m(.}..0:.
+
+
+All tests passed! 🎉
+
+Return to your browser to continue with the next lesson.
+
+kspohn@kspohn-HP-Laptop:~/webflyx$ 
+kspohn@kspohn-HP-Laptop:~/webflyx$ bootdev run 7affbcbd-1455-43f3-868a-b10662921a91 -s
+╭─────────────────────────────────────╮
+│ ?  Running: cat /tmp/catfileout.txt │
+╰┬────────────────────────────────────╯
+ ├─  ?  Expect exit code 0
+ ├─  ?  Expect stdout to contain all of:
+ │       - 'tree'                       
+ │       - 'author'                     
+ │       - 'committer'                  
+
+ > Command exit code: 1
+ > Command stdout:
+
+cat: /tmp/catfileout.txt: No such file or directory
+                                    
+                                    
+Error: expected status code 0, got 1
+
+kspohn@kspohn-HP-Laptop:~/webflyx$ git cat-file -p 95f38088b8e7bd2dc68cdb9e7c58f44cea68342c
+tree 5b21d4f16a4b07a6cde5a3242187f6a5a68b060f
+author Kevin Spohn <kspohn903@gmail.com> 1762182280 -0600
+committer Kevin Spohn <kspohn903@gmail.com> 1762182280 -0600
+
+A: add contents.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ git cat-file -p 95f38088b8e7bd2dc68cdb9e7c58f44cea68342c > /tmp/catfileout.txt
+kspohn@kspohn-HP-Laptop:~/webflyx$ bootdev run 7affbcbd-1455-43f3-868a-b10662921a91 -s
+╭─────────────────────────────────────╮
+│ ?  Running: cat /tmp/catfileout.txt │
+╰┬────────────────────────────────────╯
+ ├─  ?  Expect exit code 0
+ ├─  ?  Expect stdout to contain all of:
+ │       - 'tree'                       
+ │       - 'author'                     
+ │       - 'committer'                  
+
+ > Command exit code: 0
+ > Command stdout:
+
+tree 5b21d4f16a4b07a6cde5a3242187f6a5a68b060f
+author Kevin Spohn <kspohn903@gmail.com> 1762182280 -0600
+committer Kevin Spohn <kspohn903@gmail.com> 1762182280 -0600
+
+A: add contents.md
+
+
+All tests passed! 🎉
+
+Return to your browser to continue with the next lesson.
+
+kspohn@kspohn-HP-Laptop:~/webflyx$ git cat-file -p 5b21d4f16a4b07a6cde5a3242187f6a5a68b060f > /tmp/blobfile.txt
+kspohn@kspohn-HP-Laptop:~/webflyx$ bootdev run ce822188-75cf-4c5a-92b9-17b2878ac9f1 -s
+╭───────────────────────────────────╮
+│ ?  Running: cat /tmp/blobfile.txt │
+╰┬──────────────────────────────────╯
+ ├─  ?  Expect exit code 0
+ ├─  ?  Expect stdout to contain all of:
+ │       - '# contents'                 
+
+ > Command exit code: 0
+ > Command stdout:
+
+100644 blob ef7e93fc61a91deecaa551c4707e4c3049af42c9    contents.md
+                                            
+                                            
+Error: expected stdout to contain # contents
+
+kspohn@kspohn-HP-Laptop:~/webflyx$ git cat-file -p 5b21d4f16a4b07a6cde5a3242187f6a5a68b060f > /tmp/blobfile.txt
+kspohn@kspohn-HP-Laptop:~/webflyx$ bootdev run ce822188-75cf-4c5a-92b9-17b2878ac9f1 -s
+╭───────────────────────────────────╮
+│ ?  Running: cat /tmp/blobfile.txt │
+╰┬──────────────────────────────────╯
+ ├─  ?  Expect exit code 0
+ ├─  ?  Expect stdout to contain all of:
+ │       - '# contents'                 
+
+ > Command exit code: 0
+ > Command stdout:
+
+100644 blob ef7e93fc61a91deecaa551c4707e4c3049af42c9    contents.md
+                                            
+                                            
+Error: expected stdout to contain # contents
+
+kspohn@kspohn-HP-Laptop:~/webflyx$ git cat-file -p 5b21d4f16a4b07a6cde5a3242187f6a5a68b060f
+100644 blob ef7e93fc61a91deecaa551c4707e4c3049af42c9	contents.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ git cat-file -p ef7e93fc61a91deecaa551c4707e4c3049af42c9
+# contents
+kspohn@kspohn-HP-Laptop:~/webflyx$ git cat-file -p ef7e93fc61a91deecaa551c4707e4c3049af42c9 > /tmp/blobfile.txt
+kspohn@kspohn-HP-Laptop:~/webflyx$ bootdev run ce822188-75cf-4c5a-92b9-17b2878ac9f1 -s
+╭───────────────────────────────────╮
+│ ?  Running: cat /tmp/blobfile.txt │
+╰┬──────────────────────────────────╯
+ ├─  ?  Expect exit code 0
+ ├─  ?  Expect stdout to contain all of:
+ │       - '# contents'                 
+
+ > Command exit code: 0
+ > Command stdout:
+
+# contents
+
+
+All tests passed! 🎉
+
+Return to your browser to continue with the next lesson.
+
+kspohn@kspohn-HP-Laptop:~/webflyx$ vim titles.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ git add .
+kspohn@kspohn-HP-Laptop:~/webflyx$ git commit -m "B: add titles"
+[master e79744c] B: add titles
+ 1 file changed, 7 insertions(+)
+ create mode 100644 titles.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ git log
+commit e79744c129c7a8df96f181dc4e9e4dca836fe48b (HEAD -> master)
+Author: Kevin Spohn <kspohn903@gmail.com>
+Date:   Mon Nov 3 09:31:01 2025 -0600
+
+    B: add titles
+
+commit 95f38088b8e7bd2dc68cdb9e7c58f44cea68342c
+Author: Kevin Spohn <kspohn903@gmail.com>
+Date:   Mon Nov 3 09:04:40 2025 -0600
+
+    A: add contents.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ git cat-file -p e79744c129c7a8df96f181dc4e9e4dca836fe48b
+tree 37712fab0aa902b37e2197ebb71e4e1ba4f45f3d
+parent 95f38088b8e7bd2dc68cdb9e7c58f44cea68342c
+author Kevin Spohn <kspohn903@gmail.com> 1762183861 -0600
+committer Kevin Spohn <kspohn903@gmail.com> 1762183861 -0600
+
+B: add titles
+kspohn@kspohn-HP-Laptop:~/webflyx$ bootdev run 71127960-79af-452d-a732-0c44908ca7bf -s
+╭──────────────────────────────────────╮
+│ ?  Running: git --no-pager log -n 10 │
+╰┬─────────────────────────────────────╯
+ ├─  ?  Expect exit code 0
+ ├─  ?  Expect stdout to contain all of:
+ │       - 'B:'                         
+
+ > Command exit code: 0
+ > Command stdout:
+
+commit e79744c129c7a8df96f181dc4e9e4dca836fe48b
+Author: Kevin Spohn <kspohn903@gmail.com>
+Date:   Mon Nov 3 09:31:01 2025 -0600
+
+    B: add titles
+
+commit 95f38088b8e7bd2dc68cdb9e7c58f44cea68342c
+Author: Kevin Spohn <kspohn903@gmail.com>
+Date:   Mon Nov 3 09:04:40 2025 -0600
+
+    A: add contents.md
+╭───────────────────────────╮
+│ ?  Running: cat titles.md │
+╰┬──────────────────────────╯
+ ├─  ?  Expect exit code 0
+ ├─  ?  Expect stdout to contain all of:
+ │       - '# Titles'                   
+
+ > Command exit code: 0
+ > Command stdout:
+
+# Titles
+
+- A River Runs Through It
+- Fight Club
+- 12 Years a Slave
+- The Big Short
+- 12 Monkeys
+
+
+All tests passed! 🎉
+
+Return to your browser to continue with the next lesson.
+
+kspohn@kspohn-HP-Laptop:~/webflyx$ git cat-file -p e79744c129c7a8df96f181dc4e9e4dca836fe48b
+tree 37712fab0aa902b37e2197ebb71e4e1ba4f45f3d
+parent 95f38088b8e7bd2dc68cdb9e7c58f44cea68342c
+author Kevin Spohn <kspohn903@gmail.com> 1762183861 -0600
+committer Kevin Spohn <kspohn903@gmail.com> 1762183861 -0600
+
+B: add titles
+kspohn@kspohn-HP-Laptop:~/webflyx$ git cat-file -p 37712fab0aa902b37e2197ebb71e4e1ba4f45f3d
+100644 blob ef7e93fc61a91deecaa551c4707e4c3049af42c9	contents.md
+100644 blob 66693b8d72daef9170108c6ab4b3abd7f3950dd2	titles.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ git cat-file -p 66693b8d72daef9170108c6ab4b3abd7f3950dd2
+# Titles
+
+- A River Runs Through It
+- Fight Club
+- 12 Years a Slave
+- The Big Short
+- 12 Monkeys
+kspohn@kspohn-HP-Laptop:~/webflyx$ mkdir ./quotes/
+kspohn@kspohn-HP-Laptop:~/webflyx$ touch ./quotes/starwars.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ touch ./quotes/dune.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ vim ./quotes/starwars.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ touch ./quotes/dune.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ vim ./quotes/dune.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ git add .
+kspohn@kspohn-HP-Laptop:~/webflyx$ git commit -m "C: add quotes"
+[master 105dc62] C: add quotes
+ 2 files changed, 9 insertions(+)
+ create mode 100644 quotes/dune.md
+ create mode 100644 quotes/starwars.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ git cat-file -p e79744c129c7a8df96f181dc4e9e4dca836fe48b
+tree 37712fab0aa902b37e2197ebb71e4e1ba4f45f3d
+parent 95f38088b8e7bd2dc68cdb9e7c58f44cea68342c
+author Kevin Spohn <kspohn903@gmail.com> 1762183861 -0600
+committer Kevin Spohn <kspohn903@gmail.com> 1762183861 -0600
+
+B: add titles
+kspohn@kspohn-HP-Laptop:~/webflyx$ git log
+commit 105dc62613db95dc4973fc16986294530cf4b40b (HEAD -> master)
+Author: Kevin Spohn <kspohn903@gmail.com>
+Date:   Mon Nov 3 09:38:17 2025 -0600
+
+    C: add quotes
+
+commit e79744c129c7a8df96f181dc4e9e4dca836fe48b
+Author: Kevin Spohn <kspohn903@gmail.com>
+Date:   Mon Nov 3 09:31:01 2025 -0600
+
+    B: add titles
+
+commit 95f38088b8e7bd2dc68cdb9e7c58f44cea68342c
+Author: Kevin Spohn <kspohn903@gmail.com>
+Date:   Mon Nov 3 09:04:40 2025 -0600
+
+    A: add contents.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ git cat-file -p 105dc62613db95dc4973fc16986294530cf4b40b
+tree 1e5372bb7147aab453239bc790aacd9fd1b9f785
+parent e79744c129c7a8df96f181dc4e9e4dca836fe48b
+author Kevin Spohn <kspohn903@gmail.com> 1762184297 -0600
+committer Kevin Spohn <kspohn903@gmail.com> 1762184297 -0600
+
+C: add quotes
+kspohn@kspohn-HP-Laptop:~/webflyx$ git cat-file -p 1e5372bb7147aab453239bc790aacd9fd1b9f785
+100644 blob ef7e93fc61a91deecaa551c4707e4c3049af42c9	contents.md
+040000 tree 18d53b21a68cf7f8d8b4fb2c293ed409fb967cd3	quotes
+100644 blob 66693b8d72daef9170108c6ab4b3abd7f3950dd2	titles.md
+kspohn@kspohn-HP-Laptop:~/webflyx$ bootdev run 1e2eb318-2a6f-44a0-bc93-e9cdd9510ebe -s
+╭─────────────────────────────────────╮
+│ ?  Running: git --no-pager log -n 1 │
+╰┬────────────────────────────────────╯
+ ├─  ?  Expect exit code 0
+ ├─  ?  Expect stdout to contain all of:
+ │       - 'C:'                         
+
+ > Command exit code: 0
+ > Command stdout:
+
+commit 105dc62613db95dc4973fc16986294530cf4b40b
+Author: Kevin Spohn <kspohn903@gmail.com>
+Date:   Mon Nov 3 09:38:17 2025 -0600
+
+    C: add quotes
+╭──────────────────────────────────────╮
+│ ?  Running: cat ./quotes/starwars.md │
+╰┬─────────────────────────────────────╯
+ ├─  ?  Expect exit code 0
+ ├─  ?  Expect stdout to contain all of:           
+ │       - 'May the Force be with you'             
+ │       - 'I find your lack of faith disturbing'  
+ │       - 'I am your father'                      
+ │       - 'Do or do not. There is no try'         
+ │       - 'I've got a bad feeling about this'     
+
+ > Command exit code: 0
+ > Command stdout:
+
+- "May the Force be with you"
+- "I find your lack of faith disturbing"
+- "I am your father"
+- "Do or do not. There is no try"
+- "I've got a bad feeling about this"
+╭──────────────────────────────────╮
+│ ?  Running: cat ./quotes/dune.md │
+╰┬─────────────────────────────────╯
+ ├─  ?  Expect exit code 0
+ ├─  ?  Expect stdout to contain all of:                                                        
+ │       - 'May thy knife chip and shatter'                                                     
+ │       - 'A Great Man Doesn't Seek To Lead. He's Called To It.'                               
+ │       - 'An Animal Caught In A Trap Will Gnaw Off Its Own Leg To Escape. What Will You Do?'  
+ │       - 'When Is A Gift Not A Gift?'                                                         
+
+ > Command exit code: 0
+ > Command stdout:
+
+- "May thy knife chip and shatter"
+- "A Great Man Doesn't Seek To Lead. He's Called To It."
+- "An Animal Caught In A Trap Will Gnaw Off Its Own Leg To Escape. What Will You Do?"
+- "When Is A Gift Not A Gift?"
+
+
+All tests passed! 🎉
+
+Return to your browser to continue with the next lesson.
+
+kspohn@kspohn-HP-Laptop:~/webflyx$ git version
+git version 2.51.2
+kspohn@kspohn-HP-Laptop:~/webflyx$ git config set --local webflyx.ceo "ThePrimeagen"
+kspohn@kspohn-HP-Laptop:~/webflyx$ git config set --local webflyx.cto "TheLaneagen"
+kspohn@kspohn-HP-Laptop:~/webflyx$ git config set --local webflyx.valuation "mid"
+kspohn@kspohn-HP-Laptop:~/webflyx$ git config list --local
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+webflyx.ceo=ThePrimeagen
+webflyx.cto=TheLaneagen
+webflyx.valuation=mid
+kspohn@kspohn-HP-Laptop:~/webflyx$ cat .git/config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[webflyx]
+	ceo = ThePrimeagen
+	cto = TheLaneagen
+	valuation = mid
+kspohn@kspohn-HP-Laptop:~/webflyx$ git config get webflyx.valuation
+mid
+kspohn@kspohn-HP-Laptop:~/webflyx$ git config unset webflyx.cto
+kspohn@kspohn-HP-Laptop:~/webflyx$ cat .git/config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[webflyx]
+	ceo = ThePrimeagen
+	valuation = mid
+kspohn@kspohn-HP-Laptop:~/webflyx$ git config unset webflyx
+error: key does not contain a section: webflyx
+kspohn@kspohn-HP-Laptop:~/webflyx$ git config set --append webflyx.ceo "Warren"
+git config set --append webflyx.ceo "Carson"
+git config set --append webflyx.ceo "Sarah"
+kspohn@kspohn-HP-Laptop:~/webflyx$ git config list --local
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+webflyx.ceo=ThePrimeagen
+webflyx.valuation=mid
+webflyx.ceo=Warren
+webflyx.ceo=Carson
+webflyx.ceo=Sarah
+kspohn@kspohn-HP-Laptop:~/webflyx$ git config unset --all webflyx.ceo
+kspohn@kspohn-HP-Laptop:~/webflyx$ git config list --local
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+webflyx.valuation=mid
+kspohn@kspohn-HP-Laptop:~/webflyx$ git config remove-section webflyx
+
