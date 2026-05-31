@@ -2,9 +2,10 @@
 > pokedex_ts@1.0.0 dev
 > npx tsc && node dist/main.js
 
-Pokedex > Your command was: well
-Pokedex > Your command was: hello
-Pokedex > Your command was: pokemon
-Pokedex > Your command was: charmander
-Pokedex > Your command was: pikachu
-Pokedex > 
+Pokedex > Throwing a Pokeball at squirtle...
+squirtle escaped!
+Pokedex > Throwing a Pokeball at charmander...
+charmander escaped!
+Pokedex > Throwing a Pokeball at charmander...
+charmander was caught!
+Pokedex > Closing the Pokedex... Goodbye!
